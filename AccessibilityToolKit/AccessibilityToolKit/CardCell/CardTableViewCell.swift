@@ -27,12 +27,21 @@ class CardTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        self.setAccessibilityCard()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func setAccessibilityCard() {
+        self.isAccessibilityElement = true
+        if let index = self.indexLabel?.text, let title = self.titleLabel.text {
+            self.accessibilityLabel = "A carta do dia é a número \(index) de título \(title)"
+        }
     }
     
 }
