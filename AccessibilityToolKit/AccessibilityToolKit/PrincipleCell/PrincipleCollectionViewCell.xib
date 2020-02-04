@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrincipleCollectionViewCell" customModule="AccessibilityToolKit" customModuleProvider="target">
+            <connections>
+                <outlet property="background" destination="lLf-WT-r3l" id="xNi-tj-YSD"/>
+                <outlet property="principleLabel" destination="Gu2-yo-QZj" id="0pW-br-l2h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PrincipleCollectionViewCell" customModule="AccessibilityToolKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLf-WT-r3l">
+                        <rect key="frame" x="7.5" y="8" width="129" height="99"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu2-yo-QZj">
+                                <rect key="frame" x="16" y="62" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gu2-yo-QZj" firstAttribute="leading" secondItem="lLf-WT-r3l" secondAttribute="leading" constant="16" id="3Lj-5l-ehc"/>
+                            <constraint firstAttribute="bottom" secondItem="Gu2-yo-QZj" secondAttribute="bottom" constant="16" id="hQJ-3r-yfe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lLf-WT-r3l" secondAttribute="bottom" constant="8" id="5BN-G1-Bk7"/>
+                <constraint firstItem="lLf-WT-r3l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="8P1-Cv-UBu"/>
+                <constraint firstAttribute="trailing" secondItem="lLf-WT-r3l" secondAttribute="trailing" constant="7.5" id="jpk-up-3ro"/>
+                <constraint firstItem="lLf-WT-r3l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7.5" id="vTj-uG-LQQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <point key="canvasLocation" x="137.68115942028987" y="144.30803571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

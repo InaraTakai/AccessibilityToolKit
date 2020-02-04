@@ -13,9 +13,13 @@
 		0DCB7D9623E44B7700A577B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7D9423E44B7700A577B9 /* Main.storyboard */; };
 		0DCB7D9823E44B7900A577B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7D9723E44B7900A577B9 /* Assets.xcassets */; };
 		0DCB7D9B23E44B7900A577B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7D9923E44B7900A577B9 /* LaunchScreen.storyboard */; };
-		0DCB7DA523E4567800A577B9 /* Sobre.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7DA423E4567800A577B9 /* Sobre.storyboard */; };
-		0DCB7DA723E458DD00A577B9 /* Carta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7DA623E458DD00A577B9 /* Carta.storyboard */; };
-		0DCB7DA923E4591700A577B9 /* Lista.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7DA823E4591700A577B9 /* Lista.storyboard */; };
+		0DCB7DA523E4567800A577B9 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7DA423E4567800A577B9 /* About.storyboard */; };
+		0DCB7DA723E458DD00A577B9 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7DA623E458DD00A577B9 /* Card.storyboard */; };
+		0DCB7DA923E4591700A577B9 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB7DA823E4591700A577B9 /* List.storyboard */; };
+		2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD52023E4737900054D33 /* CardTableViewCell.swift */; };
+		2A6FD52323E4737900054D33 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD52123E4737900054D33 /* CardTableViewCell.xib */; };
+		2A6FD52823E4919200054D33 /* PrincipleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD52623E4919200054D33 /* PrincipleCollectionViewCell.swift */; };
+		2A6FD52923E4919200054D33 /* PrincipleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD52723E4919200054D33 /* PrincipleCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,13 @@
 		0DCB7D9723E44B7900A577B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DCB7D9A23E44B7900A577B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DCB7D9C23E44B7900A577B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DCB7DA423E4567800A577B9 /* Sobre.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sobre.storyboard; sourceTree = "<group>"; };
-		0DCB7DA623E458DD00A577B9 /* Carta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Carta.storyboard; sourceTree = "<group>"; };
-		0DCB7DA823E4591700A577B9 /* Lista.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lista.storyboard; sourceTree = "<group>"; };
+		0DCB7DA423E4567800A577B9 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		0DCB7DA623E458DD00A577B9 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		0DCB7DA823E4591700A577B9 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		2A6FD52023E4737900054D33 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		2A6FD52123E4737900054D33 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		2A6FD52623E4919200054D33 /* PrincipleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipleCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A6FD52723E4919200054D33 /* PrincipleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrincipleCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 		0DCB7D8D23E44B7700A577B9 /* AccessibilityToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				2A6FD52523E4913800054D33 /* PrincipleCell */,
+				2A6FD52423E4779E00054D33 /* CardCell */,
 				0DCB7D8E23E44B7700A577B9 /* AppDelegate.swift */,
 				0DCB7D9023E44B7700A577B9 /* SceneDelegate.swift */,
 				0DCB7D9223E44B7700A577B9 /* ViewController.swift */,
@@ -69,11 +79,29 @@
 				0DCB7D9923E44B7900A577B9 /* LaunchScreen.storyboard */,
 				0DCB7D9C23E44B7900A577B9 /* Info.plist */,
 				0DCB7D9423E44B7700A577B9 /* Main.storyboard */,
-				0DCB7DA423E4567800A577B9 /* Sobre.storyboard */,
-				0DCB7DA623E458DD00A577B9 /* Carta.storyboard */,
-				0DCB7DA823E4591700A577B9 /* Lista.storyboard */,
+				0DCB7DA423E4567800A577B9 /* About.storyboard */,
+				0DCB7DA623E458DD00A577B9 /* Card.storyboard */,
+				0DCB7DA823E4591700A577B9 /* List.storyboard */,
 			);
 			path = AccessibilityToolKit;
+			sourceTree = "<group>";
+		};
+		2A6FD52423E4779E00054D33 /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A6FD52023E4737900054D33 /* CardTableViewCell.swift */,
+				2A6FD52123E4737900054D33 /* CardTableViewCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		2A6FD52523E4913800054D33 /* PrincipleCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A6FD52623E4919200054D33 /* PrincipleCollectionViewCell.swift */,
+				2A6FD52723E4919200054D33 /* PrincipleCollectionViewCell.xib */,
+			);
+			path = PrincipleCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,11 +163,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCB7D9B23E44B7900A577B9 /* LaunchScreen.storyboard in Resources */,
+				2A6FD52323E4737900054D33 /* CardTableViewCell.xib in Resources */,
 				0DCB7D9823E44B7900A577B9 /* Assets.xcassets in Resources */,
-				0DCB7DA923E4591700A577B9 /* Lista.storyboard in Resources */,
+				0DCB7DA923E4591700A577B9 /* List.storyboard in Resources */,
 				0DCB7D9623E44B7700A577B9 /* Main.storyboard in Resources */,
-				0DCB7DA523E4567800A577B9 /* Sobre.storyboard in Resources */,
-				0DCB7DA723E458DD00A577B9 /* Carta.storyboard in Resources */,
+				2A6FD52923E4919200054D33 /* PrincipleCollectionViewCell.xib in Resources */,
+				0DCB7DA523E4567800A577B9 /* About.storyboard in Resources */,
+				0DCB7DA723E458DD00A577B9 /* Card.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +183,8 @@
 				0DCB7D9323E44B7700A577B9 /* ViewController.swift in Sources */,
 				0DCB7D8F23E44B7700A577B9 /* AppDelegate.swift in Sources */,
 				0DCB7D9123E44B7700A577B9 /* SceneDelegate.swift in Sources */,
+				2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */,
+				2A6FD52823E4919200054D33 /* PrincipleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PT75G5CA6;
+				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PT75G5CA6;
+				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
