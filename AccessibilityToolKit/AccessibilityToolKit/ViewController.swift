@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var dayCardView: UIView!
-    @IBOutlet weak var perceptibleView: UIView!
+    @IBOutlet weak var noticiableView: UIView!
     @IBOutlet weak var operableView: UIView!
     @IBOutlet weak var understandableView: UIView!
     @IBOutlet weak var robustView: UIView!
@@ -53,14 +53,14 @@ class ViewController: UIViewController {
     func setAccessibilityButtons() {
         self.operableView.isAccessibilityElement = true
         self.robustView.isAccessibilityElement = true
-        self.perceptibleView.isAccessibilityElement = true
+        self.noticiableView.isAccessibilityElement = true
         self.understandableView.isAccessibilityElement = true
         
         let voicePrinciple = "Abrir as cartas do princípio "
         
         self.operableView.accessibilityLabel = voicePrinciple + "Operável"
         self.robustView.accessibilityLabel = voicePrinciple + "Robusto"
-        self.perceptibleView.accessibilityLabel = voicePrinciple + "Perceptível"
+        self.noticiableView.accessibilityLabel = voicePrinciple + "Perceptível"
         self.understandableView.accessibilityLabel = voicePrinciple + "Compreensível"
         
         self.aboutView.isAccessibilityElement = true
@@ -68,7 +68,8 @@ class ViewController: UIViewController {
     }
     
     func adjustStack() {
-        if self.perceptibleLabel.frame.height > 23 {
+        print(self.perceptibleLabel.font.fontDescriptor.pointSize)
+        if self.perceptibleLabel.font.fontDescriptor.pointSize > 20 {
             self.stackUp.axis = .vertical
             self.stackDown.axis = .vertical
             self.stackDay.axis = .vertical

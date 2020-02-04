@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vst-0a-e2e">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-Nx-Idz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="925.5"/>
@@ -376,9 +376,9 @@
                         <outlet property="dayCardView" destination="EVh-P8-PBx" id="N5y-Md-Qd4"/>
                         <outlet property="dayIndexLabel" destination="rn8-5i-PFh" id="jcg-PX-vaO"/>
                         <outlet property="dayTitleLabel" destination="URq-3f-V9X" id="uLV-99-rED"/>
+                        <outlet property="noticiableView" destination="6lx-LW-gwF" id="neS-iU-Op4"/>
                         <outlet property="operableView" destination="K6S-d8-SP3" id="oQm-lR-8G9"/>
                         <outlet property="perceptibleLabel" destination="hzW-YY-n9a" id="Jdo-tL-EbF"/>
-                        <outlet property="perceptibleView" destination="6lx-LW-gwF" id="5s6-AI-lbg"/>
                         <outlet property="robustView" destination="7eK-3l-d6l" id="zzj-Zq-6nW"/>
                         <outlet property="stackDay" destination="RmD-gf-llc" id="1o1-8C-TX4"/>
                         <outlet property="stackDown" destination="caF-cq-bI7" id="2Ha-1b-FYj"/>
@@ -399,12 +399,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eXe-Q2-bW1"/>
+                        <segue destination="kG1-dm-MmZ" kind="relationship" relationship="rootViewController" id="d6K-vP-y0w"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAv-lR-JQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-93" y="21"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="R7T-K2-Srg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="List" id="kG1-dm-MmZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UGt-A2-ORH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrI-Pd-GYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="-96"/>
         </scene>
     </scenes>
     <resources>
