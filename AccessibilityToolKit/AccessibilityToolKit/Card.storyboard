@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="Zbw-OZ-GGO">
             <objects>
-                <viewController id="gRb-gV-g7S" sceneMemberID="viewController">
+                <viewController id="gRb-gV-g7S" customClass="CardViewController" customModule="AccessibilityToolKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1HU-lp-L9Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
