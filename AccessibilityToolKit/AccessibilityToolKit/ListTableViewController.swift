@@ -9,6 +9,10 @@
 import UIKit
 
 class ListTableViewController: UITableViewController {
+    var backColor: UIColor?
+    var titleList: String?
+    
+    
     let cardCell : String = "CardTableViewCell"
     let test : [(index : String, title : String, level : String)] =
         [(index : "1.1.1", title : "Socializar os meios", level : "AAA"),
@@ -21,7 +25,10 @@ class ListTableViewController: UITableViewController {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black]
-
+        
+        self.title = titleList
+        self.tableView.backgroundColor = backColor
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.indexDisplayMode = .alwaysHidden

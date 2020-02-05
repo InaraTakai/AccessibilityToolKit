@@ -129,7 +129,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lra-ez-Eq6"/>
-                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="k8l-Mc-sz6"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueNoticeable" id="k8l-Mc-sz6"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -163,7 +163,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vau-1L-ers"/>
-                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="SXa-jR-QAN"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueOperable" id="SXa-jR-QAN"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -205,7 +205,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85P-A9-sjK"/>
-                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="xJS-jy-hrD"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueUnderstandable" id="xJS-jy-hrD"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -239,7 +239,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbc-Dw-Prr"/>
-                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="vmk-hO-RsL"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueRobust" id="vmk-hO-RsL"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -369,7 +369,8 @@
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="4mH-TW-ifv"/>
                         <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ">
                             <connections>
-                                <segue destination="s2a-hc-7xK" kind="modal" id="Idc-FQ-DCV"/>
+                                <action selector="btnRandom:" destination="BYZ-38-t0r" id="2qk-lh-7ym"/>
+                                <segue destination="s2a-hc-7xK" kind="modal" identifier="segueRandom" id="Idc-FQ-DCV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -424,7 +425,7 @@
                 <viewControllerPlaceholder storyboardName="Card" id="s2a-hc-7xK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFZ-FW-8eT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="-63"/>
+            <point key="canvasLocation" x="1453" y="-62"/>
         </scene>
         <!--About-->
         <scene sceneID="R7T-K2-Srg">
@@ -434,7 +435,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrI-Pd-GYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1285" y="121"/>
+            <point key="canvasLocation" x="1447" y="122"/>
         </scene>
         <!--List-->
         <scene sceneID="DeH-bt-AX0">
@@ -444,7 +445,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juk-Be-5A6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="38"/>
+            <point key="canvasLocation" x="1707" y="38"/>
         </scene>
     </scenes>
     <resources>
@@ -469,7 +470,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SXa-jR-QAN"/>
-        <segue reference="4b4-qr-TK7"/>
+        <segue reference="vmk-hO-RsL"/>
+        <segue reference="Idc-FQ-DCV"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -30,7 +30,6 @@ class ViewController: UIViewController {
         
         self.setDayCard()
         self.setAccessibilityButtons()
-        
         self.navigationController!.navigationBar.prefersLargeTitles = true
 //
 //        self.title = "Acessibilidade\nToolkit"
@@ -83,7 +82,44 @@ class ViewController: UIViewController {
     
     @IBAction func clique(_ sender: UIButton) {
         print(sender.superview?.accessibilityLabel)
+        
     }
+    
+    @IBAction func btnRandom(_ sender: Any) {
+        
+        print(allCards.randomElement())
+    }
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueRandom" {
+            if let nav = segue.destination as? UINavigationController {
+                if let card = nav.viewControllers[0] as? CardViewController {
+                    card.titleTest = "teste"
+                }
+            }
+        }else if segue.identifier == "segueNoticeable"{
+            if let list = segue.destination as? ListTableViewController {
+                list.backColor = UIColor(named: "ToolKitRed")
+                list.titleList = NSLocalizedString("Perceptível", comment: "Princípio de acessibilidade")
+            }
+        }else if segue.identifier == "segueOperable"{
+            if let list = segue.destination as? ListTableViewController {
+                list.backColor = UIColor(named: "ToolKitBlue")
+                list.titleList = NSLocalizedString("Operável", comment: "Princípio de acessibilidade")
+            }
+        }else if segue.identifier == "segueUnderstandable"{
+            if let list = segue.destination as? ListTableViewController {
+                list.backColor = UIColor(named: "ToolKitYellow")
+                list.titleList = NSLocalizedString("Compreensível", comment: "Princípio de acessibilidade")
+            }
+        }else if segue.identifier == "segueRobust"{
+            if let list = segue.destination as? ListTableViewController {
+                list.backColor = UIColor(named: "ToolKitGreen")
+                list.titleList = NSLocalizedString("Robusto", comment: "Princípio de acessibilidade")
+            }
+        }
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
