@@ -220,6 +220,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="guideline" destination="s1p-n3-abi" id="jxx-Fn-FkG"/>
+                        <outlet property="link" destination="70X-mZ-hea" id="hkF-pE-TN6"/>
+                        <outlet property="shortDescription" destination="bLM-0c-EcS" id="5MY-u8-PGY"/>
+                        <outlet property="stackTitleCode" destination="UHT-GY-idC" id="XoM-FE-IA0"/>
+                        <outlet property="stackTitleLevel" destination="9jm-Jg-EOi" id="Oo1-Pr-qSv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBK-dS-rCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
