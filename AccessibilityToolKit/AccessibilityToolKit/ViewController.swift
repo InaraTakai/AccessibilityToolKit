@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         self.setDayCard()
         self.setAccessibilityButtons()
         
-//        self.navigationController!.navigationBar.prefersLargeTitles = true
+        self.navigationController!.navigationBar.prefersLargeTitles = true
 //
 //        self.title = "Acessibilidade\nToolkit"
 //
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     
     func adjustStack() {
         print(self.perceptibleLabel.font.fontDescriptor.pointSize)
-        if self.perceptibleLabel.font.fontDescriptor.pointSize > 20 {
+        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
             self.stackUp.axis = .vertical
             self.stackDown.axis = .vertical
             self.stackDay.axis = .vertical
