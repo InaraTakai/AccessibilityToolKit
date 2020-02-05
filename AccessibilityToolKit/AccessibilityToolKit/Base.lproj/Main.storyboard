@@ -129,6 +129,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lra-ez-Eq6"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="k8l-Mc-sz6"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -162,6 +163,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vau-1L-ers"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="SXa-jR-QAN"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -203,6 +205,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85P-A9-sjK"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="xJS-jy-hrD"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -236,6 +239,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbc-Dw-Prr"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="vmk-hO-RsL"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -363,7 +367,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ally ToolKit" id="iAl-Tc-1O0">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="4mH-TW-ifv"/>
-                        <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ">
+                            <connections>
+                                <segue destination="s2a-hc-7xK" kind="modal" id="Idc-FQ-DCV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="aboutView" destination="cYt-QS-OcT" id="E6T-cd-bMl"/>
@@ -393,12 +401,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9mK-nP-5Xq"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Adi-Pl-Ljf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAv-lR-JQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-93" y="21"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="SRM-03-BIg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tutorial" id="8xd-6O-6gM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NMw-DH-nLJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0S-Oa-ANW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="-442"/>
         </scene>
         <!--Card-->
         <scene sceneID="w6Q-23-BaJ">
@@ -406,7 +424,7 @@
                 <viewControllerPlaceholder storyboardName="Card" id="s2a-hc-7xK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFZ-FW-8eT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="-87"/>
+            <point key="canvasLocation" x="1279" y="-63"/>
         </scene>
         <!--About-->
         <scene sceneID="R7T-K2-Srg">
@@ -416,7 +434,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrI-Pd-GYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1382" y="78"/>
+            <point key="canvasLocation" x="1285" y="121"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="DeH-bt-AX0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="List" id="4ZP-Jb-YI3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="srG-bQ-v7y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juk-Be-5A6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="38"/>
         </scene>
     </scenes>
     <resources>
@@ -440,4 +468,8 @@
             <color red="0.90588235294117647" green="0.82745098039215681" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SXa-jR-QAN"/>
+        <segue reference="4b4-qr-TK7"/>
+    </inferredMetricsTieBreakers>
 </document>
