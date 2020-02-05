@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ally ToolKit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccessibilityToolKit" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,25 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vst-0a-e2e">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-Nx-Idz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="925.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="864.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acessibilidade Toolkit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfH-zd-R5w">
-                                                <rect key="frame" x="20" y="20" width="374" height="41"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta do Dia" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-HW-p0j">
-                                                <rect key="frame" x="20" y="101" width="374" height="26.5"/>
+                                                <rect key="frame" x="20" y="40" width="374" height="26.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVh-P8-PBx">
-                                                <rect key="frame" x="20" y="147.5" width="374" height="236.5"/>
+                                                <rect key="frame" x="20" y="86.5" width="374" height="236.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RmD-gf-llc">
                                                         <rect key="frame" x="20" y="20" width="334" height="196.5"/>
@@ -85,6 +79,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="236.5"/>
                                                         <connections>
                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLr-YT-4jH"/>
+                                                            <segue destination="s2a-hc-7xK" kind="modal" id="4b4-qr-TK7"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -110,13 +105,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Princípios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-7x-l0C">
-                                                <rect key="frame" x="20" y="424" width="374" height="26.5"/>
+                                                <rect key="frame" x="20" y="363" width="374" height="26.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jy9-mk-b4p">
-                                                <rect key="frame" x="20" y="470.5" width="374" height="315"/>
+                                                <rect key="frame" x="20" y="409.5" width="374" height="315"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-Rk-9Ud">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="138.5"/>
@@ -134,6 +129,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lra-ez-Eq6"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="k8l-Mc-sz6"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -167,6 +163,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vau-1L-ers"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="SXa-jR-QAN"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -208,6 +205,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85P-A9-sjK"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="xJS-jy-hrD"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -241,6 +239,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
                                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbc-Dw-Prr"/>
+                                                                            <segue destination="4ZP-Jb-YI3" kind="show" id="vmk-hO-RsL"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -269,7 +268,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-QS-OcT">
-                                                <rect key="frame" x="20" y="825.5" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="764.5" width="374" height="60"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXw-4R-N8l">
                                                         <rect key="frame" x="1" y="1" width="372" height="1"/>
@@ -299,6 +298,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                                         <connections>
                                                             <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uL7-NX-yoN"/>
+                                                            <segue destination="kG1-dm-MmZ" kind="show" id="uiv-vV-ksZ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -329,17 +329,14 @@
                                             <constraint firstItem="EVh-P8-PBx" firstAttribute="top" secondItem="2bN-HW-p0j" secondAttribute="bottom" constant="20" id="31p-NL-q0d"/>
                                             <constraint firstAttribute="trailing" secondItem="N0D-7x-l0C" secondAttribute="trailing" constant="20" id="Gmq-b9-YCg"/>
                                             <constraint firstItem="N0D-7x-l0C" firstAttribute="top" secondItem="EVh-P8-PBx" secondAttribute="bottom" constant="40" id="Hg6-vB-a1c"/>
-                                            <constraint firstItem="2bN-HW-p0j" firstAttribute="top" secondItem="RfH-zd-R5w" secondAttribute="bottom" constant="40" id="LoB-oJ-dvq"/>
+                                            <constraint firstItem="2bN-HW-p0j" firstAttribute="top" secondItem="wvQ-Nx-Idz" secondAttribute="top" constant="40" id="LoB-oJ-dvq"/>
                                             <constraint firstAttribute="trailing" secondItem="cYt-QS-OcT" secondAttribute="trailing" constant="20" id="Vkx-Ki-YBq"/>
                                             <constraint firstAttribute="trailing" secondItem="EVh-P8-PBx" secondAttribute="trailing" constant="20" id="cCE-DG-sr8"/>
                                             <constraint firstAttribute="trailing" secondItem="2bN-HW-p0j" secondAttribute="trailing" constant="20" id="cbo-FC-DzT"/>
-                                            <constraint firstItem="RfH-zd-R5w" firstAttribute="top" secondItem="wvQ-Nx-Idz" secondAttribute="top" constant="20" id="dAl-Y8-IAE"/>
-                                            <constraint firstItem="RfH-zd-R5w" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="dyP-OK-4S0"/>
                                             <constraint firstItem="cYt-QS-OcT" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="eJ2-WA-Zy0"/>
                                             <constraint firstItem="jy9-mk-b4p" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="gtF-vw-zJ4"/>
                                             <constraint firstAttribute="bottom" secondItem="cYt-QS-OcT" secondAttribute="bottom" constant="40" id="kk6-NS-s2N"/>
                                             <constraint firstItem="2bN-HW-p0j" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="lqL-6t-ZXI"/>
-                                            <constraint firstAttribute="trailing" secondItem="RfH-zd-R5w" secondAttribute="trailing" constant="20" id="mFa-Fw-1x2"/>
                                             <constraint firstAttribute="trailing" secondItem="jy9-mk-b4p" secondAttribute="trailing" constant="20" id="p6y-7v-Nrf"/>
                                             <constraint firstItem="cYt-QS-OcT" firstAttribute="top" secondItem="jy9-mk-b4p" secondAttribute="bottom" constant="40" id="p9z-fn-jdK"/>
                                             <constraint firstItem="jy9-mk-b4p" firstAttribute="top" secondItem="N0D-7x-l0C" secondAttribute="bottom" constant="20" id="q1C-Ya-w2r"/>
@@ -368,8 +365,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iAl-Tc-1O0">
-                        <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ"/>
+                    <navigationItem key="navigationItem" title="Ally ToolKit" id="iAl-Tc-1O0">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="4mH-TW-ifv"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ">
+                            <connections>
+                                <segue destination="s2a-hc-7xK" kind="modal" id="Idc-FQ-DCV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="aboutView" destination="cYt-QS-OcT" id="E6T-cd-bMl"/>
@@ -399,22 +401,50 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="kG1-dm-MmZ" kind="relationship" relationship="rootViewController" id="d6K-vP-y0w"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Adi-Pl-Ljf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAv-lR-JQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-93" y="21"/>
         </scene>
-        <!--List-->
+        <!--Tutorial-->
+        <scene sceneID="SRM-03-BIg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tutorial" id="8xd-6O-6gM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NMw-DH-nLJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0S-Oa-ANW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="-442"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="w6Q-23-BaJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Card" id="s2a-hc-7xK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFZ-FW-8eT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279" y="-63"/>
+        </scene>
+        <!--About-->
         <scene sceneID="R7T-K2-Srg">
             <objects>
-                <viewControllerPlaceholder storyboardName="List" id="kG1-dm-MmZ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="About" id="kG1-dm-MmZ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="UGt-A2-ORH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrI-Pd-GYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="-96"/>
+            <point key="canvasLocation" x="1285" y="121"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="DeH-bt-AX0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="List" id="4ZP-Jb-YI3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="srG-bQ-v7y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juk-Be-5A6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="38"/>
         </scene>
     </scenes>
     <resources>
@@ -438,4 +468,8 @@
             <color red="0.90588235294117647" green="0.82745098039215681" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SXa-jR-QAN"/>
+        <segue reference="4b4-qr-TK7"/>
+    </inferredMetricsTieBreakers>
 </document>

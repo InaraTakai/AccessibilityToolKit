@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         self.setDayCard()
         self.setAccessibilityButtons()
         
-//        self.navigationController!.navigationBar.prefersLargeTitles = true
+        self.navigationController!.navigationBar.prefersLargeTitles = true
 //
 //        self.title = "Acessibilidade\nToolkit"
 //
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         //set accessibility of day card
         self.dayCardView.isAccessibilityElement = true
         if let index = self.dayIndexLabel?.text, let title = self.dayTitleLabel.text {
-            self.dayCardView.accessibilityLabel = "A carta do dia é a número \(index) de título \(title)"
+            self.dayCardView.accessibilityLabel = NSLocalizedString("A carta do dia é a número \(index) de título \(title)", comment: "")
         }
     }
     
@@ -56,20 +56,19 @@ class ViewController: UIViewController {
         self.noticiableView.isAccessibilityElement = true
         self.understandableView.isAccessibilityElement = true
         
-        let voicePrinciple = "Abrir as cartas do princípio "
+        let voicePrinciple = NSLocalizedString("Abrir as cartas do princípio ", comment: "")
         
-        self.operableView.accessibilityLabel = voicePrinciple + "Operável"
-        self.robustView.accessibilityLabel = voicePrinciple + "Robusto"
-        self.noticiableView.accessibilityLabel = voicePrinciple + "Perceptível"
-        self.understandableView.accessibilityLabel = voicePrinciple + "Compreensível"
+        self.operableView.accessibilityLabel = voicePrinciple + NSLocalizedString("Operável", comment: "")
+        self.robustView.accessibilityLabel = voicePrinciple + NSLocalizedString("Robusto", comment: "")
+        self.noticiableView.accessibilityLabel = voicePrinciple + NSLocalizedString("Perceptível", comment: "")
+        self.understandableView.accessibilityLabel = voicePrinciple + NSLocalizedString("Compreensível", comment: "")
         
         self.aboutView.isAccessibilityElement = true
-        self.aboutView.accessibilityLabel = "Descobrir mais sobre o aplicativo"
+        self.aboutView.accessibilityLabel = NSLocalizedString("Descobrir mais sobre o aplicativo", comment: "")
     }
     
     func adjustStack() {
-        print(self.perceptibleLabel.font.fontDescriptor.pointSize)
-        if self.perceptibleLabel.font.fontDescriptor.pointSize > 20 {
+        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
             self.stackUp.axis = .vertical
             self.stackDown.axis = .vertical
             self.stackDay.axis = .vertical

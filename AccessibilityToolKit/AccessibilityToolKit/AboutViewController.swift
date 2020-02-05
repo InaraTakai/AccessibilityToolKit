@@ -1,5 +1,5 @@
 //
-//  CardViewController.swift
+//  AboutViewController.swift
 //  AccessibilityToolKit
 //
 //  Created by Gabriel Ferreira on 04/02/20.
@@ -8,18 +8,16 @@
 
 import UIKit
 
-class CardViewController: UIViewController {
+class AboutViewController: UIViewController {
+    @IBOutlet weak var image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.image.tintColor = UIColor(named: "ToolKitBackOpposite")
     }
     
-    @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 

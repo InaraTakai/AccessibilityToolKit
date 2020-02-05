@@ -26,6 +26,8 @@
 		2A6FD52923E4919200054D33 /* PrincipleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD52723E4919200054D33 /* PrincipleCollectionViewCell.xib */; };
 		2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049423E99EE1005390BE /* ListTableViewController.swift */; };
 		2AF1049723E9C972005390BE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049623E9C972005390BE /* CardViewController.swift */; };
+		2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049823EA154F005390BE /* AboutViewController.swift */; };
+		2AF1049B23EAE445005390BE /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1049A23EAE445005390BE /* Tutorial.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		2A6FD52723E4919200054D33 /* PrincipleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrincipleCollectionViewCell.xib; sourceTree = "<group>"; };
 		2AF1049423E99EE1005390BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		2AF1049623E9C972005390BE /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		2AF1049823EA154F005390BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2AF1049A23EAE445005390BE /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 				0DCB7DA423E4567800A577B9 /* About.storyboard */,
 				0DCB7DA623E458DD00A577B9 /* Card.storyboard */,
 				0DCB7DA823E4591700A577B9 /* List.storyboard */,
+				2AF1049A23EAE445005390BE /* Tutorial.storyboard */,
 				2AF1049423E99EE1005390BE /* ListTableViewController.swift */,
 				2AF1049623E9C972005390BE /* CardViewController.swift */,
+				2AF1049823EA154F005390BE /* AboutViewController.swift */,
 				0DCB7DB623E99F2400A577B9 /* Cards.swift */,
 			);
 			path = AccessibilityToolKit;
@@ -189,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCB7D9B23E44B7900A577B9 /* LaunchScreen.storyboard in Resources */,
+				2AF1049B23EAE445005390BE /* Tutorial.storyboard in Resources */,
 				2A6FD52323E4737900054D33 /* CardTableViewCell.xib in Resources */,
 				0DCB7D9823E44B7900A577B9 /* Assets.xcassets in Resources */,
 				0DCB7DA923E4591700A577B9 /* List.storyboard in Resources */,
@@ -215,6 +222,7 @@
 				0DCB7D9123E44B7700A577B9 /* SceneDelegate.swift in Sources */,
 				2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */,
 				2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */,
+				2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */,
 				0DCB7DB523E999B600A577B9 /* Level.swift in Sources */,
 				2A6FD52823E4919200054D33 /* PrincipleCollectionViewCell.swift in Sources */,
 			);
