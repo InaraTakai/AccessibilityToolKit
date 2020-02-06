@@ -50,6 +50,8 @@
 		2A6FD52023E4737900054D33 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2A6FD52123E4737900054D33 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		2AB6365123EC8315006C63C9 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		2AB6365923ECD5E9006C63C9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2AB6365A23ECD5E9006C63C9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		2AF1049423E99EE1005390BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		2AF1049623E9C972005390BE /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		2AF1049823EA154F005390BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 0DCB7D8223E44B7700A577B9;
 			productRefGroup = 0DCB7D8C23E44B7700A577B9 /* Products */;
@@ -224,6 +227,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0DCB7D9523E44B7700A577B9 /* Base */,
+				2AB6365A23ECD5E9006C63C9 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -232,6 +236,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0DCB7D9A23E44B7900A577B9 /* Base */,
+				2AB6365923ECD5E9006C63C9 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -369,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PT75G5CA6;
+				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,7 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PT75G5CA6;
+				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
