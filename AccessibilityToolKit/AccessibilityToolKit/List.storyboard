@@ -20,10 +20,23 @@
                             <outlet property="delegate" destination="Qjq-uY-o4t" id="8aU-MV-x3v"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="hdp-fH-6Di" kind="show" identifier="segueList" id="KiV-B1-gXf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fh-fx-5Y1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-19" y="55"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="weE-17-8Hj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Card" id="hdp-fH-6Di" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QTt-9w-dak"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUf-8K-YLN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="55"/>
         </scene>
     </scenes>
     <resources>

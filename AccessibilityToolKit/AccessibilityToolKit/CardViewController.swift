@@ -39,10 +39,10 @@ class CardViewController: UIViewController {
         self.shortDescription.isAccessibilityElement = true
         self.link.isAccessibilityElement = true
         
-        self.stackTitleLevel.accessibilityLabel = "Carta do princípio " + principleTitle + "com nível de conformidade" + level
-        self.guideline.accessibilityLabel = "Recomendação da carta" + diretriz
-        self.stackTitleCode.accessibilityLabel = "Critério de sucesso número" + code + criterionTitle
-        self.shortDescription.accessibilityLabel = conteudo
+        self.stackTitleLevel.accessibilityLabel = "Carta do princípio " + (self.card?.title.name())! + "com nível de conformidade" + (self.card?.level.voiceOver())!
+        self.guideline.accessibilityLabel = "Recomendação da carta" + (self.card?.guideline)!
+        self.stackTitleCode.accessibilityLabel = "Critério de sucesso número" + (self.card?.code)! + (self.card?.criterion)!
+        self.shortDescription.accessibilityLabel = (self.card?.description)!
         self.link.accessibilityLabel = "Liink para consultar a diretriz completa"
         
     }
