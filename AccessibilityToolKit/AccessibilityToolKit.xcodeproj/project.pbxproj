@@ -102,8 +102,8 @@
 				2AF1049A23EAE445005390BE /* Tutorial.storyboard */,
 				2AF1049423E99EE1005390BE /* ListTableViewController.swift */,
 				2AF1049623E9C972005390BE /* CardViewController.swift */,
-				0DCB7DB623E99F2400A577B9 /* Cards.swift */,
 				2AF1049823EA154F005390BE /* AboutViewController.swift */,
+				0DCB7DB623E99F2400A577B9 /* Cards.swift */,
 			);
 			path = AccessibilityToolKit;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C7CS39R779;
+				DEVELOPMENT_TEAM = 5PT75G5CA6;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,7 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C7CS39R779;
+				DEVELOPMENT_TEAM = 5PT75G5CA6;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

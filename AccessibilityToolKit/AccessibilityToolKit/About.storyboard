@@ -30,9 +30,9 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-gx-Ru7">
                                                 <rect key="frame" x="20" y="97.5" width="374" height="328.5"/>
-                                                <mutableString key="text">Esta versão do “toolkit” foi baseado nas cartas produzidas pelo designer UX, Marcelo Sales, com intuito de simplificar a compreensão das diretrizes WCAG (Web Content Accessibility Guidelines) e de torna-las acessíveis através desta plataforma digital. Utilize-a como fonte de pesquisa, consulta rápida, ferramenta para facilitação, disseminação de conhecimento e onde mais achar que o mesmo seja útil. 
+                                                <string key="text">Esta versão do “toolkit” foi baseado nas cartas produzidas pelo designer UX, Marcelo Sales, com intuito de simplificar a compreensão das diretrizes WCAG (Web Content Accessibility Guidelines) e de torna-las acessíveis através desta plataforma digital. Utilize-a como fonte de pesquisa, consulta rápida, ferramenta para facilitação, disseminação de conhecimento e onde mais achar que o mesmo seja útil. 
 
-A WCAG são diretrizes que fundamentam as recomendações básicas para a construção de conteúdos digitais de forma acessível a todos. Todo conteúdo adaptado neste material foi criado originalmente pelo W3C.</mutableString>
+A WCAG são diretrizes que fundamentam as recomendações básicas para a construção de conteúdos digitais de forma acessível a todos. Todo conteúdo adaptado neste material foi criado originalmente pelo W3C.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" name="ToolKitBackOpposite"/>
                                                 <nil key="highlightedColor"/>
