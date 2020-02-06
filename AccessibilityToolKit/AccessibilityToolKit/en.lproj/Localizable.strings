@@ -1,0 +1,14 @@
+
+"Operável" = "Operable";
+"Robusto" = "Robust";
+"Compreensível" = "Compreensível";
+"Perceptível" = "Noticeable";
+"Alternativas em texto" = "Text alternatives";
+"Conteúdo não textual" = "Non-text content";
+"Todo conteúdo “não textual” deve trazer uma alternativa em texto para identificar o conteúdo. Nota: a não ser que o conteúdo seja apenas decorativo ou represente uma das exceções descritas no critério completo (captcha e imagens de teste, inclusive)." = "All ”non-textual” content must include a text alternative to identify the content. Note: unless the content is just decorative or represents one of the exceptions described in the complete criterion (captcha and test images, including).";
+"Multimídia baseada em tempo" = "Time-based media";
+"Apenas áudio ou apenas vídeo (pré-gravado)"  = "Audio-only and video-only (prerecorded)";
+"Deve ser fornecida uma alternativa para o conteúdo apresentado: Apenas áudio: fornecer transcrição descritiva em texto; Apenas vídeo: fornecer áudio alternativo e/ou transcrição descritiva em texto;" = "An alternative to the content presented must be provided: Audio only: provide descriptive text transcription; Video only: provide alternative audio and / or descriptive text transcription."
+"Legendas (pré-gravado)" = "Captions (prerecorded)";
+"Devem ser fornecidas legendas para todo conteúdo que contenha áudio pré-gravado (apenas áudio ou vídeo com áudio)." = "Subtitles must be provided for all content that contains pre-recorded audio (only audio or video with audio)";
+"Audiodescrição ou mídia alternativa (pré-gravado)" = "Audio description or media alternative (prerecorded)";

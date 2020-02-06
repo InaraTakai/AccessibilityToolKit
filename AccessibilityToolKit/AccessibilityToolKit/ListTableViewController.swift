@@ -14,6 +14,8 @@ class ListTableViewController: UITableViewController {
     var allCardsPrinciple: [Card] = []
     var cardTitle:String?
     
+    var selectedCard: Card?
+    
     let cardCell : String = "CardTableViewCell"
     let test : [(index : String, title : String, level : String)] =
         [(index : "1.1.1", title : "Socializar os meios", level : "AAA"),
@@ -66,6 +68,23 @@ class ListTableViewController: UITableViewController {
         cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level()
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath as IndexPath)
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        self.selectedCard = self.allCardsPrinciple[indexPath.row]
+        performSegue(withIdentifier: "segueList", sender: cell)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueList"{
+            if let nav = segue.destination as? UINavigationController {
+                if let card = nav.viewControllers[0] as? CardViewController {
+                    card.card = selectedCard
+                }
+            }
+        }
     }
     
     

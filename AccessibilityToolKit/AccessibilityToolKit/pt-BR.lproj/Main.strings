@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Compreensível"; ObjectID = "0Xh-RP-hRa"; */
+"0Xh-RP-hRa.text" = "Compreensível";
+
+/* Class = "UILabel"; text = "Carta do Dia"; ObjectID = "2bN-HW-p0j"; */
+"2bN-HW-p0j.text" = "Carta do Dia";
+
+/* Class = "UILabel"; text = "Diretrizes na sua mão"; ObjectID = "3yy-IT-2va"; */
+"3yy-IT-2va.text" = "Diretrizes na sua mão";
+
+/* Class = "UIBarButtonItem"; title = "Voltar"; ObjectID = "4mH-TW-ifv"; */
+"4mH-TW-ifv.title" = "Voltar";
+
+/* Class = "UILabel"; text = "AAA"; ObjectID = "EGH-Rt-Z3F"; */
+"EGH-Rt-Z3F.text" = "AAA";
+
+/* Class = "UIBarButtonItem"; title = "Sortear"; ObjectID = "G8y-d3-ZCJ"; */
+"G8y-d3-ZCJ.title" = "Sortear";
+
+/* Class = "UILabel"; text = "Princípios"; ObjectID = "N0D-7x-l0C"; */
+"N0D-7x-l0C.text" = "Princípios";
+
+/* Class = "UILabel"; text = "Sobre o aplicativo"; ObjectID = "Ruq-Na-9Lb"; */
+"Ruq-Na-9Lb.text" = "Sobre o aplicativo";
+
+/* Class = "UILabel"; text = "Conteúdo não textual"; ObjectID = "URq-3f-V9X"; */
+"URq-3f-V9X.text" = "Conteúdo não textual";
+
+/* Class = "UILabel"; text = "Operável"; ObjectID = "fAY-Cx-p7r"; */
+"fAY-Cx-p7r.text" = "Operável";
+
+/* Class = "UILabel"; text = "Perceptível"; ObjectID = "hzW-YY-n9a"; */
+"hzW-YY-n9a.text" = "Perceptível";
+
+/* Class = "UINavigationItem"; title = "Ally ToolKit"; ObjectID = "iAl-Tc-1O0"; */
+"iAl-Tc-1O0.title" = "Ally ToolKit";
+
+/* Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "iTS-nY-Lzp"; */
+"iTS-nY-Lzp.normalTitle" = "Entrar";
+
+/* Class = "UILabel"; text = "1.1.1"; ObjectID = "rn8-5i-PFh"; */
+"rn8-5i-PFh.text" = "1.1.1";
+
+/* Class = "UILabel"; text = "Esse aplicativo foi criado com intuito de simplificar e facilitar o acesso as diretrizer da WCAG. Sinta-se a cvontade para utilizá-lo!"; ObjectID = "x20-mI-p83"; */
+"x20-mI-p83.text" = "Esse aplicativo foi criado com intuito de simplificar e facilitar o acesso as diretrizer da WCAG. Sinta-se a cvontade para utilizá-lo!";
+
+/* Class = "UILabel"; text = "Robusto"; ObjectID = "xvd-LR-OaY"; */
+"xvd-LR-OaY.text" = "Robusto";
