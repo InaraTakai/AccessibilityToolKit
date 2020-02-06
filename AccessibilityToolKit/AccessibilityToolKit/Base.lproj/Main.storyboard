@@ -468,10 +468,10 @@
             </objects>
             <point key="canvasLocation" x="1707" y="38"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial View Controller-->
         <scene sceneID="NxY-fr-rB3">
             <objects>
-                <viewController id="FRO-d0-byg" sceneMemberID="viewController">
+                <viewController id="FRO-d0-byg" customClass="TutorialViewController" customModule="AccessibilityToolKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgW-XP-IRa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -536,7 +536,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="R4G-rq-W74" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jjj-BO-mGR"/>
+                                    <segue destination="R4G-rq-W74" kind="modal" identifier="fromTutorial" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jjj-BO-mGR"/>
                                 </connections>
                             </button>
                         </subviews>

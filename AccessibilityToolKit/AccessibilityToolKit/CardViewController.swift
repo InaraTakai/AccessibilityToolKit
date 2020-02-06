@@ -48,14 +48,6 @@ class CardViewController: UIViewController {
     }
     
     func setCard(){
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.setAccessibilityCard()
-        
         self.colorView.backgroundColor = self.card?.title.color()
         self.symbolImage.image = self.card?.title.symbol()
         self.principleLabel.text = self.card?.title.name()
@@ -64,10 +56,43 @@ class CardViewController: UIViewController {
         self.criterionLabel.text = self.card?.criterion
         self.codeLabel.text = self.card?.code
         self.shortDescription.text = self.card?.description
+    }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.setAccessibilityCard()
+        self.setCard()
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func adjustStack() {
+        if self.traitCollection.preferredContentSizeCategory > .extraExtraLarge {
+            self.stackTitleCode.axis = .vertical
+            self.stackTitleLevel.axis = .vertical
+//        }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+//            self.stackTitleLevel.axis = .horizontal
+//            self.stackTitleCode.axis = .horizontal
+        }else{
+            self.stackTitleCode.axis = .horizontal
+            self.stackTitleLevel.axis = .horizontal
+        }
+        
+        self.view.setNeedsLayout()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.adjustStack()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        self.adjustStack()
     }
 }

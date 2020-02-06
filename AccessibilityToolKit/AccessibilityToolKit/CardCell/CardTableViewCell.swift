@@ -12,20 +12,14 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         self.setAccessibilityCard()
+        self.adjustStack()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     
     func setAccessibilityCard() {
         self.isAccessibilityElement = true
@@ -34,21 +28,13 @@ class CardTableViewCell: UITableViewCell {
         }
     }
     
-//    func adjustStack() {
-//        if self.traitCollection.preferredContentSizeCategory > .extraExtraLarge {
-//            self.stackUp.axis = .vertical
-//            self.stackDown.axis = .vertical
-//            self.stackDay.axis = .vertical
-//        }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
-//            self.stackUp.axis = .horizontal
-//            self.stackDown.axis = .horizontal
-//            self.stackDay.axis = .vertical
-//        }else{
-//            self.stackUp.axis = .horizontal
-//            self.stackDown.axis = .horizontal
-//            self.stackDay.axis = .horizontal
-//        }
-//        
-//        self.view.setNeedsLayout()
-//    }
+    func adjustStack() {
+        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+            self.stackView.axis = .vertical
+        }else{
+            self.stackView.axis = .horizontal
+        }
+
+        self.setNeedsLayout()
+    }
 }

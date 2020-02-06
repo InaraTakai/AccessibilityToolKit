@@ -22,6 +22,7 @@
 		0DCB7DB723E99F2400A577B9 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB7DB623E99F2400A577B9 /* Cards.swift */; };
 		2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD52023E4737900054D33 /* CardTableViewCell.swift */; };
 		2A6FD52323E4737900054D33 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6FD52123E4737900054D33 /* CardTableViewCell.xib */; };
+		2AB6365223EC8315006C63C9 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6365123EC8315006C63C9 /* TutorialViewController.swift */; };
 		2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049423E99EE1005390BE /* ListTableViewController.swift */; };
 		2AF1049723E9C972005390BE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049623E9C972005390BE /* CardViewController.swift */; };
 		2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049823EA154F005390BE /* AboutViewController.swift */; };
@@ -45,6 +46,7 @@
 		0DCB7DB623E99F2400A577B9 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		2A6FD52023E4737900054D33 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2A6FD52123E4737900054D33 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		2AB6365123EC8315006C63C9 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		2AF1049423E99EE1005390BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		2AF1049623E9C972005390BE /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		2AF1049823EA154F005390BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				2AF1049623E9C972005390BE /* CardViewController.swift */,
 				2AF1049823EA154F005390BE /* AboutViewController.swift */,
 				0DCB7DB623E99F2400A577B9 /* Cards.swift */,
+				2AB6365123EC8315006C63C9 /* TutorialViewController.swift */,
 			);
 			path = AccessibilityToolKit;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */,
 				2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */,
 				2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */,
+				2AB6365223EC8315006C63C9 /* TutorialViewController.swift in Sources */,
 				0DCB7DB523E999B600A577B9 /* Level.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
