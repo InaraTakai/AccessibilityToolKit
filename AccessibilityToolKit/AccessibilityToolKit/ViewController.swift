@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dayIndexLabel: UILabel!
     @IBOutlet weak var dayTitleLabel: UILabel!
+    @IBOutlet weak var dayLevelLabel: UILabel!
     
     @IBOutlet weak var stackDay: UIStackView!
     @IBOutlet weak var stackUp: UIStackView!
@@ -26,27 +27,54 @@ class ViewController: UIViewController {
     
     var defaults = UserDefaults.standard
     
+    var dayCard : Card?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         self.setDayCard()
         self.setAccessibilityButtons()
         self.navigationController!.navigationBar.prefersLargeTitles = true
         
-        let date = self.defaults.string(forKey: "date")
-        let currentDate = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd.MM.yyyy"
-//        print(formatter.string(from: date))
-//        if date != 
     }
 
     func setDayCard() {
+        //set card informations
+        let date = defaults.string(forKey: "date")
+        let currentDate = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        
+        if date != nil && date == formatter.string(from: currentDate) {
+            self.dayCard = allCards[defaults.integer(forKey: "card")]
+        }else{
+            self.defaults.set(formatter.string(from: currentDate), forKey: "date")
+            let cardNumber = self.randomCardNumber()
+            self.dayCard = allCards[cardNumber]
+            self.defaults.set(cardNumber, forKey: "card")
+        }
+        
+        self.dayIndexLabel.text = self.dayCard?.code
+        self.dayTitleLabel.text = self.dayCard?.guideline
+//        self.dayLevelLabel.text = self.dayCard?.level
+
         //set border of day card
         self.dayCardView.layer.borderWidth = 3
-        self.dayCardView.layer.borderColor = UIColor(named: "ToolKitRed")?.cgColor
-        
+        var color : CGColor?
+        switch self.dayCard?.title {
+        case .Noticeable:
+            color = UIColor(named: "ToolKitRed")?.cgColor
+        case .Operable:
+            color = UIColor(named: "ToolKitBlue")?.cgColor
+        case .Robust:
+            color = UIColor(named: "ToolKitGreen")?.cgColor
+        case .Understandable:
+            color = UIColor(named: "ToolKitYellow")?.cgColor
+        case .none:
+            color = UIColor.black.cgColor
+        }
+        self.dayCardView.layer.borderColor = color
+
         //set accessibility of day card
         self.dayCardView.isAccessibilityElement = true
         if let index = self.dayIndexLabel?.text, let title = self.dayTitleLabel.text {
@@ -73,6 +101,10 @@ class ViewController: UIViewController {
     
     func randomCard() -> Card {
         return allCards.randomElement() ?? allCards[0]
+    }
+    
+    func randomCardNumber() -> Int {
+        return Int.random(in: 0 ... 77)
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
