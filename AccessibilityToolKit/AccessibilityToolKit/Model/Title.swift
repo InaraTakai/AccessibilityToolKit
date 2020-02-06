@@ -13,4 +13,20 @@ enum Title {
     case Operable
     case Understandable
     case Robust
+    
+    func name() -> String{
+        var name :  String
+        
+        switch self {
+        case .Noticeable:
+            name = NSLocalizedString("Perceptível", comment: "Princípio de acessibilidade")
+        case .Operable:
+            name = NSLocalizedString("Operável", comment: "Princípio de acessibilidade")
+        case .Understandable:
+            name = NSLocalizedString("Compreensível", comment: "Princípio de acessibilidade")
+        case .Robust:
+            name = NSLocalizedString("Robusto", comment: "Princípio de acessibilidade")
+        }
+        return name
+    }
 }
