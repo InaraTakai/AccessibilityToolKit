@@ -111,6 +111,7 @@ class ViewController: UIViewController {
             if let list = segue.destination as? ListTableViewController {
                 list.backColor = UIColor(named: "ToolKitRed")
                 list.titleList = NSLocalizedString("Perceptível", comment: "Princípio de acessibilidade")
+                
             }
         }else if segue.identifier == "segueOperable"{
             if let list = segue.destination as? ListTableViewController {

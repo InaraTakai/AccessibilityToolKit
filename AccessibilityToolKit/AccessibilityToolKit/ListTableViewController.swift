@@ -11,7 +11,8 @@ import UIKit
 class ListTableViewController: UITableViewController {
     var backColor: UIColor?
     var titleList: String?
-    var allCardsPrinciple: [Card]?
+    var allCardsPrinciple: [Card] = []
+    var cardTitle:String?
     
     let cardCell : String = "CardTableViewCell"
     let test : [(index : String, title : String, level : String)] =
@@ -35,6 +36,14 @@ class ListTableViewController: UITableViewController {
            
         let nib = UINib.init(nibName: self.cardCell, bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: self.cardCell)
+        
+        if let cardsPrinciple = listaPrinciple[titleList!] {
+            for cardd in cardsPrinciple {
+                allCardsPrinciple.append(cardd)
+            }
+            tableView.reloadData()
+        }
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -46,15 +55,15 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.test.count
+        return self.allCardsPrinciple.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cardCell, for: indexPath) as! CardTableViewCell
 
-        cell.indexLabel.text = self.test[indexPath.row].index
-        cell.titleLabel.text = self.test[indexPath.row].title
-        cell.levelLabel.text = self.test[indexPath.row].level
+        cell.indexLabel.text = self.allCardsPrinciple[indexPath.row].code
+        cell.titleLabel.text = self.allCardsPrinciple[indexPath.row].criterion
+        cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level()
         
         return cell
     }
