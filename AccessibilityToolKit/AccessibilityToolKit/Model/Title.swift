@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Title {
     case Noticeable
@@ -28,5 +29,37 @@ enum Title {
             name = NSLocalizedString("Robusto", comment: "Princípio de acessibilidade")
         }
         return name
+    }
+    
+    func color() -> UIColor?{
+        var color :  UIColor?
+        
+        switch self {
+        case .Noticeable:
+            color = UIColor(named: "ToolKitRed")
+        case .Operable:
+            color = UIColor(named: "ToolKitBlue")
+        case .Understandable:
+            color = UIColor(named: "ToolKitYellow")
+        case .Robust:
+            color = UIColor(named: "ToolKitGreen")
+        }
+        return color
+    }
+    
+    func symbol() -> UIImage?{
+        var symbol :  UIImage?
+        
+        switch self {
+        case .Noticeable:
+            symbol = UIImage(named: "NoticeableSymbol")
+        case .Operable:
+            symbol = UIImage(named: "OperableSymbol")
+        case .Understandable:
+            symbol = UIImage(named: "UnderstandableSymbol")
+        case .Robust:
+            symbol = UIImage(named: "RobustSymbol")
+        }
+        return symbol
     }
 }

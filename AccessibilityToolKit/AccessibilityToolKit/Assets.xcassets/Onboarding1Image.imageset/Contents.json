@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "arte-onboarding-01-light.pdf",
+      "filename" : "arte-onboarding-01-light.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "arte-onboarding-01-dark.pdf",
+      "filename" : "arte-onboarding-01-dark.png",
       "appearances" : [
         {
           "appearance" : "luminosity",

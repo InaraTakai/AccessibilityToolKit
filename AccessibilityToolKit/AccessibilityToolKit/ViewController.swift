@@ -60,20 +60,7 @@ class ViewController: UIViewController {
 
         //set border of day card
         self.dayCardView.layer.borderWidth = 3
-        var color : CGColor?
-        switch self.dayCard?.title {
-        case .Noticeable:
-            color = UIColor(named: "ToolKitRed")?.cgColor
-        case .Operable:
-            color = UIColor(named: "ToolKitBlue")?.cgColor
-        case .Robust:
-            color = UIColor(named: "ToolKitGreen")?.cgColor
-        case .Understandable:
-            color = UIColor(named: "ToolKitYellow")?.cgColor
-        case .none:
-            color = UIColor.black.cgColor
-        }
-        self.dayCardView.layer.borderColor = color
+        self.dayCardView.layer.borderColor = self.dayCard?.title.color()?.cgColor
 
         //set accessibility of day card
         self.dayCardView.isAccessibilityElement = true
@@ -114,6 +101,12 @@ class ViewController: UIViewController {
                     card.card = self.randomCard()
                 }
             }
+        }else if segue.identifier == "segueDayCard" {
+            if let nav = segue.destination as? UINavigationController {
+                if let card = nav.viewControllers[0] as? CardViewController {
+                    card.card = self.dayCard
+                }
+            }
         }else if segue.identifier == "segueNoticeable"{
             if let list = segue.destination as? ListTableViewController {
                 list.backColor = UIColor(named: "ToolKitRed")
@@ -138,9 +131,13 @@ class ViewController: UIViewController {
     }
     
     func adjustStack() {
-        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+        if self.traitCollection.preferredContentSizeCategory > .extraExtraLarge {
             self.stackUp.axis = .vertical
             self.stackDown.axis = .vertical
+            self.stackDay.axis = .vertical
+        }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+            self.stackUp.axis = .horizontal
+            self.stackDown.axis = .horizontal
             self.stackDay.axis = .vertical
         }else{
             self.stackUp.axis = .horizontal

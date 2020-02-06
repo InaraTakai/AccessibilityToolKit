@@ -13,16 +13,6 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     
-//    var indexText: String{
-//        set{
-//            self.
-//        }
-//        
-//        get{
-//            return self.indexLabel.text ?? ""
-//        }
-//    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -40,8 +30,25 @@ class CardTableViewCell: UITableViewCell {
     func setAccessibilityCard() {
         self.isAccessibilityElement = true
         if let index = self.indexLabel?.text, let title = self.titleLabel.text {
-            self.accessibilityLabel = "A carta do dia é a número \(index) de título \(title)"
+            self.accessibilityLabel = "Carta de número \(index) de título \(title)"
         }
     }
     
+//    func adjustStack() {
+//        if self.traitCollection.preferredContentSizeCategory > .extraExtraLarge {
+//            self.stackUp.axis = .vertical
+//            self.stackDown.axis = .vertical
+//            self.stackDay.axis = .vertical
+//        }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+//            self.stackUp.axis = .horizontal
+//            self.stackDown.axis = .horizontal
+//            self.stackDay.axis = .vertical
+//        }else{
+//            self.stackUp.axis = .horizontal
+//            self.stackDown.axis = .horizontal
+//            self.stackDay.axis = .horizontal
+//        }
+//        
+//        self.view.setNeedsLayout()
+//    }
 }

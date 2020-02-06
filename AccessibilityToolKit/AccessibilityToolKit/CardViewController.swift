@@ -19,6 +19,8 @@ class CardViewController: UIViewController {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var criterionLabel: UILabel!
     @IBOutlet weak var codeLabel: UILabel!
+    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var symbolImage: UIImageView!
     
     var card : Card?
     var titleTest: String?
@@ -54,14 +56,14 @@ class CardViewController: UIViewController {
         
         self.setAccessibilityCard()
         
-        card = allCards[0]
-        
-        principleLabel.text = card?.title.name()
-        levelLabel.text = card?.level.level()
-        guideline.text = card?.guideline
-        criterionLabel.text = card?.criterion
-        codeLabel.text = card?.code
-        shortDescription.text = card?.description
+        self.colorView.backgroundColor = self.card?.title.color()
+        self.symbolImage.image = self.card?.title.symbol()
+        self.principleLabel.text = self.card?.title.name()
+        self.levelLabel.text = self.card?.level.level()
+        self.guideline.text = self.card?.guideline
+        self.criterionLabel.text = self.card?.criterion
+        self.codeLabel.text = self.card?.code
+        self.shortDescription.text = self.card?.description
     
     }
     
