@@ -9,12 +9,17 @@
 import UIKit
 
 class CardViewController: UIViewController {
-    
     @IBOutlet weak var stackTitleLevel: UIStackView!
     @IBOutlet weak var guideline: UILabel!
     @IBOutlet weak var stackTitleCode: UIStackView!
     @IBOutlet weak var shortDescription: UILabel!
     @IBOutlet weak var link: UIButton!
+    
+    @IBOutlet weak var principleLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    
+    
+    var card : Card?
     
     var titleTest: String?
     var principleTitle = "operável"
@@ -39,26 +44,18 @@ class CardViewController: UIViewController {
         
     }
     
+    func setCard(){
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         guideline.text = titleTest
         self.setAccessibilityCard()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

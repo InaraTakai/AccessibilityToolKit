@@ -78,7 +78,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-cN-aod">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="236.5"/>
                                                         <connections>
-                                                            <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLr-YT-4jH"/>
                                                             <segue destination="s2a-hc-7xK" kind="modal" id="4b4-qr-TK7"/>
                                                         </connections>
                                                     </button>
@@ -128,7 +127,6 @@
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yru-R9-sd9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
-                                                                            <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lra-ez-Eq6"/>
                                                                             <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueNoticeable" id="k8l-Mc-sz6"/>
                                                                         </connections>
                                                                     </button>
@@ -162,7 +160,6 @@
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzL-gR-YhV">
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="138.5"/>
                                                                         <connections>
-                                                                            <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vau-1L-ers"/>
                                                                             <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueOperable" id="SXa-jR-QAN"/>
                                                                         </connections>
                                                                     </button>
@@ -204,7 +201,6 @@
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-lb-DDq">
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
-                                                                            <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85P-A9-sjK"/>
                                                                             <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueUnderstandable" id="xJS-jy-hrD"/>
                                                                         </connections>
                                                                     </button>
@@ -238,7 +234,6 @@
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1B-TM-Xxd">
                                                                         <rect key="frame" x="0.0" y="0.0" width="179" height="160.5"/>
                                                                         <connections>
-                                                                            <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbc-Dw-Prr"/>
                                                                             <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueRobust" id="vmk-hO-RsL"/>
                                                                         </connections>
                                                                     </button>
@@ -369,7 +364,6 @@
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="4mH-TW-ifv"/>
                         <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ">
                             <connections>
-                                <action selector="btnRandom:" destination="BYZ-38-t0r" id="2qk-lh-7ym"/>
                                 <segue destination="s2a-hc-7xK" kind="modal" identifier="segueRandom" id="Idc-FQ-DCV"/>
                             </connections>
                         </barButtonItem>

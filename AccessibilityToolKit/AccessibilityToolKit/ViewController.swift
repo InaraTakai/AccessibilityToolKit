@@ -66,35 +66,15 @@ class ViewController: UIViewController {
         self.aboutView.accessibilityLabel = NSLocalizedString("Descobrir mais sobre o aplicativo", comment: "")
     }
     
-    func adjustStack() {
-        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
-            self.stackUp.axis = .vertical
-            self.stackDown.axis = .vertical
-            self.stackDay.axis = .vertical
-        }else{
-            self.stackUp.axis = .horizontal
-            self.stackDown.axis = .horizontal
-            self.stackDay.axis = .horizontal
-        }
-        
-        self.view.setNeedsLayout()
-    }
-    
-    @IBAction func clique(_ sender: UIButton) {
-        print(sender.superview?.accessibilityLabel)
-        
-    }
-    
-    @IBAction func btnRandom(_ sender: Any) {
-        
-        print(allCards.randomElement())
+    func randomCard() -> Card {
+        return allCards.randomElement() ?? allCards[0]
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueRandom" {
             if let nav = segue.destination as? UINavigationController {
                 if let card = nav.viewControllers[0] as? CardViewController {
-                    card.titleTest = "teste"
+                    card.card = self.randomCard()
                 }
             }
         }else if segue.identifier == "segueNoticeable"{
@@ -120,6 +100,19 @@ class ViewController: UIViewController {
         }
     }
     
+    func adjustStack() {
+        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+            self.stackUp.axis = .vertical
+            self.stackDown.axis = .vertical
+            self.stackDay.axis = .vertical
+        }else{
+            self.stackUp.axis = .horizontal
+            self.stackDown.axis = .horizontal
+            self.stackDay.axis = .horizontal
+        }
+        
+        self.view.setNeedsLayout()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -131,6 +124,10 @@ class ViewController: UIViewController {
         super.traitCollectionDidChange(previousTraitCollection)
         
         self.adjustStack()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ToolKitBackOpposite") ?? UIColor.orange]
     }
 }
 
