@@ -292,7 +292,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44G-w8-Ius">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                                         <connections>
-                                                            <action selector="clique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uL7-NX-yoN"/>
                                                             <segue destination="kG1-dm-MmZ" kind="show" id="uiv-vV-ksZ"/>
                                                         </connections>
                                                     </button>

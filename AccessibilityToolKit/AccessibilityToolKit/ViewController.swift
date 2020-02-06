@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var stackDown: UIStackView!
     @IBOutlet weak var perceptibleLabel: UILabel!
     
+    var defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,10 +33,13 @@ class ViewController: UIViewController {
         self.setDayCard()
         self.setAccessibilityButtons()
         self.navigationController!.navigationBar.prefersLargeTitles = true
-//
-//        self.title = "Acessibilidade\nToolkit"
-//
-//        self.navigationController?.navigationBar.largeContentTitle = title
+        
+        let date = self.defaults.string(forKey: "date")
+        let currentDate = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+//        print(formatter.string(from: date))
+//        if date != 
     }
 
     func setDayCard() {
