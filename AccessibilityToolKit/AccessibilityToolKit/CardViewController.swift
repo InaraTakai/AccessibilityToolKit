@@ -70,7 +70,7 @@ class CardViewController: UIViewController {
     }
     
     func adjustStack() {
-        if self.traitCollection.preferredContentSizeCategory > .extraExtraLarge {
+        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
             self.stackTitleCode.axis = .vertical
             self.stackTitleLevel.axis = .vertical
 //        }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
