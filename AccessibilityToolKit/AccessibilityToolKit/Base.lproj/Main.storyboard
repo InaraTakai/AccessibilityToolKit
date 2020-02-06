@@ -82,7 +82,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="ToolKitBackground"/>
+                                                <color key="backgroundColor" name="ToolKitBackGround"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="RmD-gf-llc" secondAttribute="bottom" constant="20" symbolic="YES" id="BGL-cL-tMu"/>
                                                     <constraint firstItem="RmD-gf-llc" firstAttribute="leading" secondItem="EVh-P8-PBx" secondAttribute="leading" constant="20" symbolic="YES" id="Jof-3e-t4r"/>
@@ -349,7 +349,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="qcD-xf-Soy"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" name="ToolKitBackground"/>
+                        <color key="backgroundColor" name="ToolKitBackGround"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vst-0a-e2e" secondAttribute="trailing" id="1w4-rY-tdC"/>
                             <constraint firstItem="Vst-0a-e2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C5R-HA-Eed"/>
@@ -443,6 +443,9 @@
     </scenes>
     <resources>
         <image name="chevron.right" catalog="system" width="48" height="64"/>
+        <namedColor name="ToolKitBackGround">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ToolKitBackOpposite">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
