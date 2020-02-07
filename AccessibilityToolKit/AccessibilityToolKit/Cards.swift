@@ -29,7 +29,7 @@ let card9 = Card(title: .Noticeable, level: .AAA, code: "1.2.8", guideline: NSLo
 
 let card10 = Card(title: .Noticeable, level: .AAA, code: "1.2.9", guideline: NSLocalizedString("Multimídia baseada em tempo", comment: "Diretriz"), criterion: NSLocalizedString("Apenas áudio (ao vivo)", comment: "Critério de Sucesso"), description: NSLocalizedString("Deve ser fornecida uma transcrição descritiva em texto para todo conteúdo apresentado ao vivo.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card11 = Card(title: .Noticeable, level: .A, code: "1.3.1", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Informações e Relações", comment: "Critério de Sucesso"), description: NSLocalizedString("A estrutura e as relações entre os compo- nentes da tela devem fazer sentido tanto para a visão quanto para a audição. Nota para DEV: código semanticamente correto atende completamente este critério.", comment: "Descrição resumidada diretriz"), link: nil)
+let card11 = Card(title: .Noticeable, level: .A, code: "1.3.1", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Informações e Relações", comment: "Critério de Sucesso"), description: NSLocalizedString("A estrutura e as relações entre os componentes da tela devem fazer sentido tanto para a visão quanto para a audição. Nota para DEV: código semanticamente correto atende completamente este critério.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card12 = Card(title: .Noticeable, level: .A, code: "1.3.2", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Sequência com significado", comment: "Critério de Sucesso"), description: NSLocalizedString("A ordem de leitura e a navegação pelos componentes em tela deve fazer sentido para o usuário. Nota: a ordem estrutural dos componentes visíveis em tela deve ser a mesma ao se reproduzir o conteúdo através de um leitor de telas. Nota 2: utilizar em conjunto com critério 2.4.3.", comment: "Descrição resumidada diretriz"), link: nil)
 
@@ -37,21 +37,21 @@ let card13 = Card(title: .Noticeable, level: .A, code: "1.3.3", guideline: NSLoc
 
 let card14 = Card(title: .Noticeable, level: .AA, code: "1.3.4", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Orientação", comment: "Critério de Sucesso"), description: NSLocalizedString("Funcionalidades não devem depender de uma determinada orientação de tela (exemplo: virar o celular na horizontal) a não ser que seja imprescindível para execução da função.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card15 = Card(title: .Noticeable, level: .AA, code: "1.3.5", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Identificar o objetivo de entrada", comment: "Critério de Sucesso"), description: NSLocalizedString("O objetivo de entrada de um campo deve ser claramente definido (exemplo: para um campo de e-mail, deve-se aplicar correta- mente o tipo de entrada de dados e-mail - input type='e-mail') e sempre que possível, deve-se habilitar o atributo de auto-comple- tar.Nota: ver em conjunto com os critérios 2.4.6 e 3.3.2.", comment: "Descrição resumidada diretriz"), link: nil)
+let card15 = Card(title: .Noticeable, level: .AA, code: "1.3.5", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Identificar o objetivo de entrada", comment: "Critério de Sucesso"), description: NSLocalizedString("O objetivo de entrada de um campo deve ser claramente definido (exemplo: para um campo de e-mail, deve-se aplicar corretamente o tipo de entrada de dados e-mail - input type='e-mail') e sempre que possível, deve-se habilitar o atributo de auto-completar.Nota: ver em conjunto com os critérios 2.4.6 e 3.3.2.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card16 = Card(title: .Noticeable, level: .AAA, code: "1.3.6", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Identificar o objetivo", comment: "Critério de Sucesso"), description: NSLocalizedString("O significado e objetivo de todos os elemen- tos em tela devem ser claramente definidos para que o conteúdo (que será ouvido) seja compreensível o suficiente para que o usuário possa personalizar a leitura da forma como melhor se adequar. Nota para DEV: aplicar corretamente ARIA REGIONS e METADADOS.", comment: "Descrição resumidada diretriz"), link: nil)
+let card16 = Card(title: .Noticeable, level: .AAA, code: "1.3.6", guideline: NSLocalizedString("Adaptável", comment: "Diretriz"), criterion: NSLocalizedString("Identificar o objetivo", comment: "Critério de Sucesso"), description: NSLocalizedString("O significado e objetivo de todos os elementos em tela devem ser claramente definidos para que o conteúdo (que será ouvido) seja compreensível o suficiente para que o usuário possa personalizar a leitura da forma como melhor se adequar. Nota para DEV: aplicar corretamente ARIA REGIONS e METADADOS.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card17 = Card(title: .Noticeable, level: .A, code: "1.4.1", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Utilização de cores", comment: "Critério de Sucesso"), description: NSLocalizedString("Cores não devem ser utilizadas como única maneira de transmitir conteúdo ou distinguir elementos visuais. Exemplo: uma mensagem de erro em formulário deve trazer indicações visuais, textos e também mudança de cor do formulário (e não apenas a mudança de cor).", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card18 = Card(title: .Noticeable, level: .A, code: "1.4.2", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Controle de áudio", comment: "Critério de Sucesso"), description: NSLocalizedString("Deve ser fornecido um mecanismo para pausar, deixar mudo ou ajustar o volume para qualquer áudio que toque automaticamente por mais de 3 segundos.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card19 = Card(title: .Noticeable, level: .AA, code: "1.4.3", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Contraste (mínimo)", comment: "Critério de Sucesso"), description: NSLocalizedString("Textos devem ter uma relação de contraste* entre primeiro e segundo plano de ao menos 4.5:1. Nota: textos em tamanhos de fontes maiores (a partir de 18pt ou 14pt bold) podem ter uma relação de contraste de 3:1. Nota 2: ver critério completo para entender relação de contraste.", comment: "Descrição resumidada diretriz"), link: nil)
+let card19 = Card(title: .Noticeable, level: .AA, code: "1.4.3", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Contraste (mínimo)", comment: "Critério de Sucesso"), description: NSLocalizedString("Textos devem ter uma relação de contraste entre primeiro e segundo plano de ao menos 4.5:1. Nota: textos em tamanhos de fontes maiores (a partir de 18pt ou 14pt bold) podem ter uma relação de contraste de 3:1. Nota 2: ver critério completo para entender relação de contraste.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card20 = Card(title: .Noticeable, level: .AA, code: "1.4.4", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Redimensionar texto", comment: "Critério de Sucesso"), description: NSLocalizedString("O conteúdo em texto deve ser legível e funcional mesmo quando a tela for ampliada em até 200% do seu tamanho padrão.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card21 = Card(title: .Noticeable, level: .A, code: "1.4.5", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Imagens de texto", comment: "Critério de Sucesso"), description: NSLocalizedString("Evitar o uso de textos em imagens a não ser que sejam essenciais (exemplo: marcas e logos) ou que possam ser personalizadas pelo usuário.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card22 = Card(title: .Noticeable, level: .AAA, code: "1.4.6", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Contraste (melhorado)", comment: "Critério de Sucesso"), description: NSLocalizedString("Textos devem ter uma relação de contraste* entre primeiro e segundo plano de ao menos 7:1. Nota: textos em tamanhos de fontes maiores (a partir de 18pt ou 14pt bold) podem ter uma relação de contraste de 4.5:1. Nota 2: ver critério completo para entender relação de contraste.", comment: "Descrição resumidada diretriz"), link: nil)
+let card22 = Card(title: .Noticeable, level: .AAA, code: "1.4.6", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Contraste (melhorado)", comment: "Critério de Sucesso"), description: NSLocalizedString("Textos devem ter uma relação de contraste entre primeiro e segundo plano de ao menos 7:1. Nota: textos em tamanhos de fontes maiores (a partir de 18pt ou 14pt bold) podem ter uma relação de contraste de 4.5:1. Nota 2: ver critério completo para entender relação de contraste.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card23 = Card(title: .Noticeable, level: .AAA, code: "1.4.7", guideline: NSLocalizedString("Discernível", comment: "Diretriz"), criterion: NSLocalizedString("Som baixo ou sem som de fundo", comment: "Critério de Sucesso"), description: NSLocalizedString("Qualquer tipo de som que não seja voz em um áudio ou vídeo pré-gravado, deverá ser baixo o suficiente (ou inexistente) para que o usuário não tenha dificuldade de compreensão da voz principal.", comment: "Descrição resumidada diretriz"), link: nil)
 
@@ -109,9 +109,9 @@ let card49 = Card(title: .Operable, level: .AA, code: "2.4.7", guideline: NSLoca
 
 let card50 = Card(title: .Operable, level: .AAA, code: "2.4.8", guideline: NSLocalizedString("Navegável", comment: "Diretriz"), criterion: NSLocalizedString("Localização", comment: "Critério de Sucesso"), description: NSLocalizedString("Deve ser fornecido um meio para o usuário se orientar entre os conteúdos de um mesmo conjunto de páginas ou telas. Exemplo: utilizar um breadcrumb", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card51 = Card(title: .Operable, level: .AAA, code: "2.4.9", guideline: NSLocalizedString("Navegável", comment: "Diretriz"), criterion: NSLocalizedString("Finalidade do link (apenas link)", comment: "Critério de Sucesso"), description: NSLocalizedString("A finalidade de cada link deve ser determina- da a partir do texto do próprio link. Nota: ao atender este critério, o critério 2.4.4 (A) também estará atendido.", comment: "Descrição resumidada diretriz"), link: nil)
+let card51 = Card(title: .Operable, level: .AAA, code: "2.4.9", guideline: NSLocalizedString("Navegável", comment: "Diretriz"), criterion: NSLocalizedString("Finalidade do link (apenas link)", comment: "Critério de Sucesso"), description: NSLocalizedString("A finalidade de cada link deve ser determinada a partir do texto do próprio link. Nota: ao atender este critério, o critério 2.4.4 (A) também estará atendido.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card52 = Card(title: .Operable, level: .AAA, code: "2.4.10", guideline: NSLocalizedString("Navegável", comment: "Diretriz"), criterion: NSLocalizedString("Cabeçalhos da seção", comment: "Critério de Sucesso"), description: NSLocalizedString("Sempre que possível, deve-se fornecer títulos em diferentes sessões e níveis, permitindo que o usuário identifique facilmente a hierarquia das informações em um determina- do conteúdo. Nota: este critério abrange exclusivamente conteúdo textual, não confundir com 4.1.2.", comment: "Descrição resumidada diretriz"), link: nil)
+let card52 = Card(title: .Operable, level: .AAA, code: "2.4.10", guideline: NSLocalizedString("Navegável", comment: "Diretriz"), criterion: NSLocalizedString("Cabeçalhos da seção", comment: "Critério de Sucesso"), description: NSLocalizedString("Sempre que possível, deve-se fornecer títulos em diferentes sessões e níveis, permitindo que o usuário identifique facilmente a hierarquia das informações em um determinado conteúdo. Nota: este critério abrange exclusivamente conteúdo textual, não confundir com 4.1.2.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card53 = Card(title: .Operable, level: .A, code: "2.5.1", guideline: NSLocalizedString("Modalidade de Entrada", comment: "Diretriz"), criterion: NSLocalizedString("Gestos de acionamento", comment: "Critério de Sucesso"), description: NSLocalizedString("Nenhuma funcionalidade deve ser baseada em uma movimentação complexa (exemplo: arraste com 3 dedos para direita), a menos que seja uma funcionalidade essencial e não haja outra alternativa.", comment: "Descrição resumidada diretriz"), link: nil)
 
@@ -133,9 +133,9 @@ let card61 = Card(title: .Understandable, level: .AAA, code: "3.1.3", guideline:
 
 let card62 = Card(title: .Understandable, level: .AAA, code: "3.1.4", guideline: NSLocalizedString("Legível", comment: "Diretriz"), criterion: NSLocalizedString("Abreviações", comment: "Critério de Sucesso"), description: NSLocalizedString("Abreviações e/ou acrônimos devem ser identificados diretamente no conteúdo ou por meio de uma forma que possibilite a apresentação de sua definição por extenso.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card63 = Card(title: .Understandable, level: .AAA, code: "3.1.5", guideline: NSLocalizedString("Legível", comment: "Diretriz"), criterion: NSLocalizedString("Nível de leitura", comment: "Critério de Sucesso"), description: NSLocalizedString("Caso um determinado conteúdo seja tão complexo a ponto de um usuário com ensino fundamental completo* não ser capaz de entender, será necessário a sua revisão ou a utilização de conteúdo complementar que facilite o seu entendimento. Nota: *baseado em níveis internacionais (UNESCO)", comment: "Descrição resumidada diretriz"), link: nil)
+let card63 = Card(title: .Understandable, level: .AAA, code: "3.1.5", guideline: NSLocalizedString("Legível", comment: "Diretriz"), criterion: NSLocalizedString("Nível de leitura", comment: "Critério de Sucesso"), description: NSLocalizedString("Caso um determinado conteúdo seja tão complexo a ponto de um usuário com ensino fundamental completo não ser capaz de entender, será necessário a sua revisão ou a utilização de conteúdo complementar que facilite o seu entendimento. Nota: baseado em níveis internacionais (UNESCO)", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card64 = Card(title: .Understandable, level: .AAA, code: "3.1.6", guideline: NSLocalizedString("Legível", comment: "Diretriz"), criterion: NSLocalizedString("Pronúncia", comment: "Critério de Sucesso"), description: NSLocalizedString("Deve-se fornecer um mecanismo que identifique a pronúncia correta de determina- das palavras que possam gerar ambiguidade fora do contexto.", comment: "Descrição resumidada diretriz"), link: nil)
+let card64 = Card(title: .Understandable, level: .AAA, code: "3.1.6", guideline: NSLocalizedString("Legível", comment: "Diretriz"), criterion: NSLocalizedString("Pronúncia", comment: "Critério de Sucesso"), description: NSLocalizedString("Deve-se fornecer um mecanismo que identifique a pronúncia correta de determinadas palavras que possam gerar ambiguidade fora do contexto.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card65 = Card(title: .Understandable, level: .A, code: "3.2.1", guideline: NSLocalizedString("Previsível", comment: "Diretriz"), criterion: NSLocalizedString("Em foco", comment: "Critério de Sucesso"), description: NSLocalizedString("Quando um componente recebe foco, nenhum tipo de mudança contextual que possa confundir o usuário, deve ser efetuada. Nota: ver em conjunto com critério 3.2.2.", comment: "Descrição resumidada diretriz"), link: nil)
 
@@ -147,13 +147,13 @@ let card68 = Card(title: .Understandable, level: .AA, code: "3.2.4", guideline: 
 
 let card69 = Card(title: .Understandable, level: .AAA, code: "3.2.5", guideline: NSLocalizedString("Previsível", comment: "Diretriz"), criterion: NSLocalizedString("Alteração a pedido", comment: "Critério de Sucesso"), description: NSLocalizedString("Qualquer alteração de contexto na tela, que possa desorientar o usuário, só deve ocorrer após uma ação de confirmação do próprio usuário, a não ser que um mecanismo para cancelar a ação seja disponibilizado. Nota: ao atender este critério, o critério 3.2.1 (A) também estará atendido.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card70 = Card(title: .Understandable, level: .A, code: "3.3.1", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Identificação do erro", comment: "Critério de Sucesso"), description: NSLocalizedString("Erros durante e após o preenchimento de dados em formulários, devem ser identifica- dos de forma específica e clara para o usuário. O acesso aos campos com erros também deve ser simplificado. Nota: ver em conjunto com critérios 3.3.2 e 3.3.3.", comment: "Descrição resumidada diretriz"), link: nil)
+let card70 = Card(title: .Understandable, level: .A, code: "3.3.1", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Identificação do erro", comment: "Critério de Sucesso"), description: NSLocalizedString("Erros durante e após o preenchimento de dados em formulários, devem ser identificados de forma específica e clara para o usuário. O acesso aos campos com erros também deve ser simplificado. Nota: ver em conjunto com critérios 3.3.2 e 3.3.3.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card71 = Card(title: .Understandable, level: .A, code: "3.3.2", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Rótulos e Instruções", comment: "Critério de Sucesso"), description: NSLocalizedString("Rótulos (labels) devem identificar os respectivos campos de formulários de forma clara e correta. Forneça instruções de tela ou dicas de preenchimento dos campos sempre que possível. Nota: ver em conjunto com critérios 1.3.5, 3.3.1 e 3.3.3.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card72 = Card(title: .Understandable, level: .AA, code: "3.3.3", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Sugestão de erro", comment: "Critério de Sucesso"), description: NSLocalizedString("Forneça sugestões simples para que o usuário consiga corrigir facilmente os erros de preenchimento. Nota: ver em conjunto com critérios 3.3.1 e 3.3.2.", comment: "Descrição resumidada diretriz"), link: nil)
 
-let card73 = Card(title: .Understandable, level: .AA, code: "3.3.4", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Prevenção de erro (legal, financeiro, dados)", comment: "Critério de Sucesso"), description: NSLocalizedString("Sempre que o usuário puder acrescentar qualquer informação que envolva responsabil- idade jurídica ou transação financeira via formulário, bem como alterações em dados já existentes, deve-se também possibilitar o cancelamento do envio ou a verificação e confirmação dos dados.", comment: "Descrição resumidada diretriz"), link: nil)
+let card73 = Card(title: .Understandable, level: .AA, code: "3.3.4", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Prevenção de erro (legal, financeiro, dados)", comment: "Critério de Sucesso"), description: NSLocalizedString("Sempre que o usuário puder acrescentar qualquer informação que envolva responsabilidade jurídica ou transação financeira via formulário, bem como alterações em dados já existentes, deve-se também possibilitar o cancelamento do envio ou a verificação e confirmação dos dados.", comment: "Descrição resumidada diretriz"), link: nil)
 
 let card74 = Card(title: .Understandable, level: .AAA, code: "3.3.5", guideline: NSLocalizedString("Assistência a entrada", comment: "Diretriz"), criterion: NSLocalizedString("Ajuda", comment: "Critério de Sucesso"), description: NSLocalizedString("Caso um rótulo (label) não seja suficiente para explicar o preenchimento de um determinado campo, uma ajuda contextualizada deve ser fornecida. Nota: ver também critério 3.3.2.", comment: "Descrição resumidada diretriz"), link: nil)
 
@@ -166,8 +166,88 @@ let card77 = Card(title: .Robust, level: .A, code: "4.1.2", guideline: NSLocaliz
 let card78 = Card(title: .Robust, level: .AA, code: "4.1.3", guideline: NSLocalizedString("Compatível", comment: "Diretriz"), criterion: NSLocalizedString("Mensagens de status", comment: "Critério de Sucesso"), description: NSLocalizedString("Qualquer tipo de mensagem informacional e relevante ao usuário após executar uma ação deve ser transmitida sem que haja mudança de foco no elemento que originou a informação. Nota: ver critério completo para identificar exemplos e casos de uso.", comment: "Descrição resumidada diretriz"), link: nil)
 
 
+let allCards = [card1,
+                card2,
+                card3,
+                card4,
+                card5,
+                card6,
+                card7,
+                card8,
+                card9,
+                card10,
+                card11,
+                card12,
+                card13,
+                card14,
+                card15,
+                card16,
+                card17,
+                card18,
+                card19,
+                card20,
+                card21,
+                card22,
+                card23,
+                card24,
+                card25,
+                card26,
+                card27,
+                card28,
+                card29,
+                card30,
+                card31,
+                card32,
+                card33,
+                card34,
+                card35,
+                card36,
+                card37,
+                card38,
+                card39,
+                card40,
+                card41,
+                card42,
+                card43,
+                card44,
+                card45,
+                card46,
+                card47,
+                card48,
+                card49,
+                card50,
+                card51,
+                card52,
+                card53,
+                card54,
+                card55,
+                card56,
+                card57,
+                card58,
+                card59,
+                card60,
+                card61,
+                card62,
+                card63,
+                card64,
+                card65,
+                card66,
+                card67,
+                card68,
+                card69,
+                card70,
+                card71,
+                card72,
+                card73,
+                card74,
+                card75,
+                card76,
+                card77,
+                card78]
 
-
+let listaPrinciple: [String: [Card]] = Dictionary(grouping: allCards) { (element) -> String in
+    return element.title.name()
+}
 
 
 

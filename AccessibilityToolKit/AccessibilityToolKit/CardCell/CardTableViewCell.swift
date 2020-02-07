@@ -12,36 +12,32 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
-    
-//    var indexText: String{
-//        set{
-//            self.
-//        }
-//        
-//        get{
-//            return self.indexLabel.text ?? ""
-//        }
-//    }
+    @IBOutlet weak var stackView: UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
-        self.setAccessibilityCard()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        self.adjustStack()
     }
     
+    override func layoutSubviews() {
+        self.setAccessibilityCard()
+    }
     
     func setAccessibilityCard() {
         self.isAccessibilityElement = true
         if let index = self.indexLabel?.text, let title = self.titleLabel.text {
-            self.accessibilityLabel = "A carta do dia é a número \(index) de título \(title)"
+            self.accessibilityLabel = "Carta de número \(index) de título \(title)"
         }
     }
     
+    func adjustStack() {
+        if self.traitCollection.preferredContentSizeCategory > .extraLarge {
+            self.stackView.axis = .vertical
+        }else{
+            self.stackView.axis = .horizontal
+        }
+
+        self.setNeedsLayout()
+    }
 }
