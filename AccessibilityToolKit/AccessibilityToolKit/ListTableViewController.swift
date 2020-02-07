@@ -17,9 +17,6 @@ class ListTableViewController: UITableViewController {
     var selectedCard: Card?
     
     let cardCell : String = "CardTableViewCell"
-    let test : [(index : String, title : String, level : String)] =
-        [(index : "1.1.1", title : "Socializar os meios", level : "AAA"),
-         (index : "1.1.2", title : "Reforma agraria", level : "AA")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +78,7 @@ class ListTableViewController: UITableViewController {
         if segue.identifier == "segueList"{
             if let nav = segue.destination as? UINavigationController {
                 if let card = nav.viewControllers[0] as? CardViewController {
-                    card.card = selectedCard
+                    card.card = self.selectedCard
                 }
             }
         }

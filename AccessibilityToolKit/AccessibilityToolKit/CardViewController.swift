@@ -23,14 +23,6 @@ class CardViewController: UIViewController {
     @IBOutlet weak var symbolImage: UIImageView!
     
     var card : Card?
-    var titleTest: String?
-    var principleTitle = "operável"
-    var level = "baixo"
-    var criterionTitle = "conteúdo não textual"
-    var code = "1.1.1"
-    var diretriz = "Alternativas em texto"
-    var conteudo = "Todo conteúdo “não textual” deve trazer uma alternativa em texto para identificar o conteúdo."
-    
     
     func setAccessibilityCard() {
         self.stackTitleLevel.isAccessibilityElement = true
