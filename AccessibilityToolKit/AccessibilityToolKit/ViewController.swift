@@ -25,6 +25,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var stackDown: UIStackView!
     @IBOutlet weak var perceptibleLabel: UILabel!
     
+    @IBOutlet weak var dayCardLabel: UILabel!
+    @IBOutlet weak var btnRandom: UIBarButtonItem!
+    @IBOutlet weak var principleLabel: UILabel!
+    @IBOutlet weak var robustLabel: UILabel!
+    @IBOutlet weak var operableLabel: UILabel!
+    @IBOutlet weak var noticeableLabel: UILabel!
+    @IBOutlet weak var understandableLabel: UILabel!
+    @IBOutlet weak var aboutLabel: UILabel!
+    
     var defaults = UserDefaults.standard
     
     var dayCard : Card?
@@ -35,6 +44,16 @@ class ViewController: UIViewController {
         self.setDayCard()
         self.setAccessibilityButtons()
         self.navigationController!.navigationBar.prefersLargeTitles = true
+        self.dayCardLabel.text  = NSLocalizedString("Carta do Dia", comment: "")
+        self.principleLabel.text  = NSLocalizedString("Princípios", comment: "")
+        self.robustLabel.text  = NSLocalizedString("Robusto", comment: "")
+        self.operableLabel.text  = NSLocalizedString("Operável", comment: "")
+        self.noticeableLabel.text  = NSLocalizedString("Perceptível", comment: "")
+        self.understandableLabel.text  = NSLocalizedString("Compreensível", comment: "")
+        self.aboutLabel.text  = NSLocalizedString("Sobre o aplicativo", comment: "")
+        self.btnRandom.title = NSLocalizedString("Sortear", comment: "")
+        
+        
         
     }
 

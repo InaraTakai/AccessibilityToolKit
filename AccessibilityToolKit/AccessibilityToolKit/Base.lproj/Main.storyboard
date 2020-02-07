@@ -404,18 +404,26 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="aboutLabel" destination="Ruq-Na-9Lb" id="rAh-Iz-iiE"/>
                         <outlet property="aboutView" destination="cYt-QS-OcT" id="E6T-cd-bMl"/>
+                        <outlet property="btnRandom" destination="G8y-d3-ZCJ" id="5QJ-pf-msr"/>
+                        <outlet property="dayCardLabel" destination="2bN-HW-p0j" id="ObI-TX-HHX"/>
                         <outlet property="dayCardView" destination="EVh-P8-PBx" id="N5y-Md-Qd4"/>
                         <outlet property="dayIndexLabel" destination="rn8-5i-PFh" id="jcg-PX-vaO"/>
                         <outlet property="dayLevelLabel" destination="EGH-Rt-Z3F" id="5My-75-883"/>
                         <outlet property="dayTitleLabel" destination="URq-3f-V9X" id="uLV-99-rED"/>
+                        <outlet property="noticeableLabel" destination="hzW-YY-n9a" id="R26-CL-9du"/>
                         <outlet property="noticiableView" destination="6lx-LW-gwF" id="neS-iU-Op4"/>
+                        <outlet property="operableLabel" destination="fAY-Cx-p7r" id="SOK-0C-jV1"/>
                         <outlet property="operableView" destination="K6S-d8-SP3" id="oQm-lR-8G9"/>
                         <outlet property="perceptibleLabel" destination="hzW-YY-n9a" id="Jdo-tL-EbF"/>
+                        <outlet property="principleLabel" destination="N0D-7x-l0C" id="E4I-fE-c1r"/>
+                        <outlet property="robustLabel" destination="xvd-LR-OaY" id="Fne-hD-YiH"/>
                         <outlet property="robustView" destination="7eK-3l-d6l" id="zzj-Zq-6nW"/>
                         <outlet property="stackDay" destination="RmD-gf-llc" id="1o1-8C-TX4"/>
                         <outlet property="stackDown" destination="caF-cq-bI7" id="2Ha-1b-FYj"/>
                         <outlet property="stackUp" destination="TmF-Rk-9Ud" id="j8u-ye-sbA"/>
+                        <outlet property="understandableLabel" destination="0Xh-RP-hRa" id="ccm-UD-CXu"/>
                         <outlet property="understandableView" destination="tGH-gr-GML" id="glg-sd-622"/>
                     </connections>
                 </viewController>

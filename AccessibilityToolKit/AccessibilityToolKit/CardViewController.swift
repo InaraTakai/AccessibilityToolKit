@@ -21,6 +21,7 @@ class CardViewController: UIViewController {
     @IBOutlet weak var codeLabel: UILabel!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var symbolImage: UIImageView!
+    @IBOutlet weak var linkLabel: UIButton!
     
     var card : Card?
     
@@ -55,6 +56,7 @@ class CardViewController: UIViewController {
         
         self.setAccessibilityCard()
         self.setCard()
+        self.linkLabel.setTitle(NSLocalizedString("link para diretriz completa", comment: ""), for: .normal)
     }
     
     @IBAction func cancel(_ sender: Any) {

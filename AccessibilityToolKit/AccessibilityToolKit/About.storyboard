@@ -82,6 +82,8 @@ A WCAG são diretrizes que fundamentam as recomendações básicas para a constr
                         <viewLayoutGuide key="safeArea" id="2W7-60-Exd"/>
                     </view>
                     <connections>
+                        <outlet property="aboutContent" destination="Z38-gx-Ru7" id="W1N-5Z-HqR"/>
+                        <outlet property="aboutLabel" destination="cYW-yb-HnW" id="Jei-EH-Z5Z"/>
                         <outlet property="image" destination="nOl-29-YjJ" id="1GQ-w0-na6"/>
                     </connections>
                 </viewController>

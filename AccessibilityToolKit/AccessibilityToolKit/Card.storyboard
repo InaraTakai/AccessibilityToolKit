@@ -44,16 +44,16 @@
                                                 <rect key="frame" x="20" y="108" width="374" height="72"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Princípios" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9Z-Zk-dV9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="72"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="72"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <color key="textColor" name="ToolKitBackOpposite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpw-AP-vs6">
-                                                        <rect key="frame" x="318" y="0.0" width="56" height="72"/>
+                                                        <rect key="frame" x="310" y="0.0" width="64" height="72"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q1-3D-mBK">
-                                                                <rect key="frame" x="8" y="8" width="40" height="56"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q1-3D-mBK">
+                                                                <rect key="frame" x="8" y="8" width="48" height="56"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <color key="textColor" name="ToolKitBackground"/>
                                                                 <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                                                         <constraints>
                                                             <constraint firstItem="6q1-3D-mBK" firstAttribute="leading" secondItem="Lpw-AP-vs6" secondAttribute="leading" constant="8" id="3wT-XJ-LXO"/>
                                                             <constraint firstAttribute="trailing" secondItem="6q1-3D-mBK" secondAttribute="trailing" constant="8" id="9EO-gi-A8x"/>
-                                                            <constraint firstAttribute="width" constant="56" id="d4G-6Q-QAK"/>
+                                                            <constraint firstAttribute="width" constant="64" id="d4G-6Q-QAK"/>
                                                             <constraint firstAttribute="bottom" secondItem="6q1-3D-mBK" secondAttribute="bottom" constant="8" id="oYn-X0-Quk"/>
                                                             <constraint firstItem="6q1-3D-mBK" firstAttribute="top" secondItem="Lpw-AP-vs6" secondAttribute="top" constant="8" id="y9S-7v-l0F"/>
                                                         </constraints>
@@ -99,16 +99,16 @@
                                                 <rect key="frame" x="20" y="302" width="374" height="72"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrS-62-sOi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="72"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="72"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" name="ToolKitBackOpposite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9e5-23-l3Z">
-                                                        <rect key="frame" x="318" y="0.0" width="56" height="72"/>
+                                                        <rect key="frame" x="310" y="0.0" width="64" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.1.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-ng-7U6">
-                                                                <rect key="frame" x="8" y="8" width="40" height="56"/>
+                                                                <rect key="frame" x="8" y="8" width="48" height="56"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <color key="textColor" name="ToolKitBackground"/>
                                                                 <nil key="highlightedColor"/>
@@ -118,7 +118,7 @@
                                                         <constraints>
                                                             <constraint firstItem="lN5-ng-7U6" firstAttribute="top" secondItem="9e5-23-l3Z" secondAttribute="top" constant="8" id="04m-Wd-7NB"/>
                                                             <constraint firstItem="lN5-ng-7U6" firstAttribute="leading" secondItem="9e5-23-l3Z" secondAttribute="leading" constant="8" id="IVb-Vi-0ix"/>
-                                                            <constraint firstAttribute="width" constant="56" id="JL4-6Z-E4f"/>
+                                                            <constraint firstAttribute="width" constant="64" id="JL4-6Z-E4f"/>
                                                             <constraint firstAttribute="trailing" secondItem="lN5-ng-7U6" secondAttribute="trailing" constant="8" id="iki-OI-NQG"/>
                                                             <constraint firstAttribute="bottom" secondItem="lN5-ng-7U6" secondAttribute="bottom" constant="8" id="tCg-dy-FQ4"/>
                                                         </constraints>
@@ -238,6 +238,7 @@
                         <outlet property="guideline" destination="s1p-n3-abi" id="jxx-Fn-FkG"/>
                         <outlet property="levelLabel" destination="6q1-3D-mBK" id="eGv-QZ-tS5"/>
                         <outlet property="link" destination="70X-mZ-hea" id="hkF-pE-TN6"/>
+                        <outlet property="linkLabel" destination="70X-mZ-hea" id="b9x-K2-ImC"/>
                         <outlet property="principleLabel" destination="s9Z-Zk-dV9" id="O96-Vu-nbB"/>
                         <outlet property="shortDescription" destination="bLM-0c-EcS" id="5MY-u8-PGY"/>
                         <outlet property="stackTitleCode" destination="UHT-GY-idC" id="XoM-FE-IA0"/>
