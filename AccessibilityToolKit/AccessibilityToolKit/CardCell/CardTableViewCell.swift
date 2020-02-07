@@ -17,8 +17,11 @@ class CardTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.setAccessibilityCard()
         self.adjustStack()
+    }
+    
+    override func layoutSubviews() {
+        self.setAccessibilityCard()
     }
     
     func setAccessibilityCard() {
