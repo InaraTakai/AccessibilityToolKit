@@ -11,7 +11,7 @@
         <!--Ally ToolKit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccessibilityToolKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AllyKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-cN-aod">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="236.5"/>
                                                         <connections>
-                                                            <segue destination="s2a-hc-7xK" kind="modal" identifier="segueDayCard" id="tgX-df-GCx"/>
+                                                            <segue destination="s2a-hc-7xK" kind="presentation" identifier="segueDayCard" id="tgX-df-GCx"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -399,7 +399,7 @@
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="4mH-TW-ifv"/>
                         <barButtonItem key="rightBarButtonItem" title="Sortear" id="G8y-d3-ZCJ">
                             <connections>
-                                <segue destination="s2a-hc-7xK" kind="modal" identifier="segueRandom" id="Idc-FQ-DCV"/>
+                                <segue destination="s2a-hc-7xK" kind="presentation" identifier="segueRandom" id="Idc-FQ-DCV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -479,7 +479,7 @@
         <!--Tutorial View Controller-->
         <scene sceneID="NxY-fr-rB3">
             <objects>
-                <viewController id="FRO-d0-byg" customClass="TutorialViewController" customModule="AccessibilityToolKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FRO-d0-byg" customClass="TutorialViewController" customModule="AllyKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgW-XP-IRa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -544,7 +544,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="R4G-rq-W74" kind="modal" identifier="fromTutorial" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jjj-BO-mGR"/>
+                                    <segue destination="R4G-rq-W74" kind="presentation" identifier="fromTutorial" modalPresentationStyle="fullScreen" id="Jjj-BO-mGR"/>
                                 </connections>
                             </button>
                         </subviews>

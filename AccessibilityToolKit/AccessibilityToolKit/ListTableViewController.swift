@@ -18,6 +18,7 @@ class ListTableViewController: UITableViewController {
     
     let cardCell : String = "CardTableViewCell"
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +45,7 @@ class ListTableViewController: UITableViewController {
         }
         tableView.reloadData()
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

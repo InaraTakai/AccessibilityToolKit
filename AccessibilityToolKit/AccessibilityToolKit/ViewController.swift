@@ -52,9 +52,6 @@ class ViewController: UIViewController {
         self.understandableLabel.text  = NSLocalizedString("Compreensível", comment: "")
         self.aboutLabel.text  = NSLocalizedString("Sobre o aplicativo", comment: "")
         self.btnRandom.title = NSLocalizedString("Sortear", comment: "")
-        
-        
-        
     }
 
     func setDayCard() {
@@ -181,7 +178,11 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ToolKitBackOpposite") ?? UIColor.orange]
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ToolKitBackOpposite") ?? UIColor.white]
+        
+        self.navigationController?.navigationBar.backItem?.backBarButtonItem?.tintColor = .black
     }
 }
 
