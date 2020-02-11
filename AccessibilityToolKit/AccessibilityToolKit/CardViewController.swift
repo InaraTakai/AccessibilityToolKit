@@ -22,8 +22,11 @@ class CardViewController: UIViewController {
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var symbolImage: UIImageView!
     @IBOutlet weak var linkLabel: UIButton!
+    @IBOutlet weak var exampleTitle: UILabel!
+    @IBOutlet weak var exampleImage: UIImageView!
     
     var card : Card?
+    
     
     func setAccessibilityCard() {
         self.stackTitleLevel.isAccessibilityElement = true
@@ -31,13 +34,23 @@ class CardViewController: UIViewController {
         self.guideline.isAccessibilityElement = true
         self.shortDescription.isAccessibilityElement = true
         self.link.isAccessibilityElement = true
+        if self.card?.image == nil{
+            self.exampleImage.isAccessibilityElement = false
+        }else{
+            self.exampleImage.isAccessibilityElement = true
+            self.exampleImage.accessibilityLabel = NSLocalizedString("Exemplo visual do critério de sucesso", comment: "")
+        }
         
-        self.stackTitleLevel.accessibilityLabel = "Carta do princípio " + (self.card?.title.name())! + "com nível de conformidade" + (self.card?.level.voiceOver())!
-        self.guideline.accessibilityLabel = "Recomendação da carta" + (self.card?.guideline)!
-        self.stackTitleCode.accessibilityLabel = "Critério de sucesso número" + (self.card?.code)! + (self.card?.criterion)!
+        
+        let myStringTitleLevel = String(format: NSLocalizedString("Carta do princípio %@ com nível de conformidade %@", comment: ""), (self.card?.title.name())!, (self.card?.level.voiceOver())!)
+        let myStringGuideline = String(format: NSLocalizedString("Recomendação da carta %@", comment: ""), (self.card?.guideline)!)
+        let myStringTitleCode = String(format: NSLocalizedString("Critério de sucesso número %@ %@", comment: ""), (self.card?.code)!, (self.card?.criterion)!)
+        self.stackTitleLevel.accessibilityLabel = myStringTitleLevel
+        self.guideline.accessibilityLabel = myStringGuideline
+        self.stackTitleCode.accessibilityLabel = myStringTitleCode
         self.shortDescription.accessibilityLabel = (self.card?.description)!
-        self.link.accessibilityLabel = "Liink para consultar a diretriz completa"
-        
+        self.link.accessibilityLabel = NSLocalizedString("Link para consultar a diretriz completa", comment: "")
+    
     }
     
     func setCard(){
@@ -57,6 +70,16 @@ class CardViewController: UIViewController {
         self.setAccessibilityCard()
         self.setCard()
         self.linkLabel.setTitle(NSLocalizedString("link para diretriz completa", comment: ""), for: .normal)
+        if self.card?.image == nil{
+            self.exampleTitle.text = ""
+        }else{
+            self.exampleTitle.text = NSLocalizedString("Exemplo", comment: "")
+            self.exampleImage.image = UIImage(named: self.card!.image!)
+        }
+    }
+    
+    @IBAction func btnLink(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: self.card!.link!)!)
     }
     
     @IBAction func cancel(_ sender: Any) {
@@ -67,9 +90,6 @@ class CardViewController: UIViewController {
         if self.traitCollection.preferredContentSizeCategory > .extraLarge {
             self.stackTitleCode.axis = .vertical
             self.stackTitleLevel.axis = .vertical
-//        }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
-//            self.stackTitleLevel.axis = .horizontal
-//            self.stackTitleCode.axis = .horizontal
         }else{
             self.stackTitleCode.axis = .horizontal
             self.stackTitleLevel.axis = .horizontal
@@ -90,3 +110,4 @@ class CardViewController: UIViewController {
         self.adjustStack()
     }
 }
+

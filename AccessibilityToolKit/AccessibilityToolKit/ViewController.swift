@@ -37,6 +37,10 @@ class ViewController: UIViewController {
     var defaults = UserDefaults.standard
     
     var dayCard : Card?
+    let robustPrinciple = NSLocalizedString("Robusto", comment: "")
+    let operablePrinciple = NSLocalizedString("Operável", comment: "")
+    let noticeablePrinciple = NSLocalizedString("Perceptível", comment: "")
+    let understandablePrinciple = NSLocalizedString("Compreensível", comment: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +76,6 @@ class ViewController: UIViewController {
         
         self.dayIndexLabel.text = self.dayCard?.code
         self.dayTitleLabel.text = self.dayCard?.guideline
-//        self.dayLevelLabel.text = self.dayCard?.level
 
         //set border of day card
         self.dayCardView.layer.borderWidth = 3
@@ -81,7 +84,7 @@ class ViewController: UIViewController {
         //set accessibility of day card
         self.dayCardView.isAccessibilityElement = true
         if let index = self.dayIndexLabel?.text, let title = self.dayTitleLabel.text {
-            self.dayCardView.accessibilityLabel = NSLocalizedString("A carta do dia é a número \(index) de título \(title)", comment: "")
+            self.dayCardView.accessibilityLabel = String(format: NSLocalizedString("A carta do dia é a de código %@ de critério de sucesso %@ e nível de conformidade %@", comment: ""), index, title, (self.dayCard?.level.voiceOver())!)
         }
     }
     
@@ -91,12 +94,10 @@ class ViewController: UIViewController {
         self.noticiableView.isAccessibilityElement = true
         self.understandableView.isAccessibilityElement = true
         
-        let voicePrinciple = NSLocalizedString("Abrir as cartas do princípio ", comment: "")
-        
-        self.operableView.accessibilityLabel = voicePrinciple + NSLocalizedString("Operável", comment: "")
-        self.robustView.accessibilityLabel = voicePrinciple + NSLocalizedString("Robusto", comment: "")
-        self.noticiableView.accessibilityLabel = voicePrinciple + NSLocalizedString("Perceptível", comment: "")
-        self.understandableView.accessibilityLabel = voicePrinciple + NSLocalizedString("Compreensível", comment: "")
+        self.operableView.accessibilityLabel = String(format: NSLocalizedString("Abrir as cartas do princípio %@", comment: ""), operablePrinciple)
+        self.robustView.accessibilityLabel = String(format: NSLocalizedString("Abrir as cartas do princípio %@", comment: ""), robustPrinciple)
+        self.noticiableView.accessibilityLabel = String(format: NSLocalizedString("Abrir as cartas do princípio %@", comment: ""), noticeablePrinciple)
+        self.understandableView.accessibilityLabel = String(format: NSLocalizedString("Abrir as cartas do princípio %@", comment: ""), understandablePrinciple)
         
         self.aboutView.isAccessibilityElement = true
         self.aboutView.accessibilityLabel = NSLocalizedString("Descobrir mais sobre o aplicativo", comment: "")
@@ -161,7 +162,7 @@ class ViewController: UIViewController {
             self.stackDown.axis = .horizontal
             self.stackDay.axis = .horizontal
         }
-        
+       
         self.view.setNeedsLayout()
     }
     
@@ -181,8 +182,6 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "ToolKitBackOpposite") ?? UIColor.white]
-        
-        self.navigationController?.navigationBar.backItem?.backBarButtonItem?.tintColor = .black
     }
 }
 

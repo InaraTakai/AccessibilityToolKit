@@ -17,5 +17,6 @@ struct Card {
     var criterion: String?
     var description: String?
     var link: String?
+    var image: String?
 }
 

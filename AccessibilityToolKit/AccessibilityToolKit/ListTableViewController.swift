@@ -17,7 +17,6 @@ class ListTableViewController: UITableViewController {
     var selectedCard: Card?
     
     let cardCell : String = "CardTableViewCell"
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +27,7 @@ class ListTableViewController: UITableViewController {
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black]
         
         self.title = titleList
+        
         self.tableView.backgroundColor = backColor
         
         self.tableView.delegate = self
@@ -44,6 +44,13 @@ class ListTableViewController: UITableViewController {
             tableView.reloadData()
         }
         tableView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
     }
     
     // MARK: - Table view data source
@@ -64,7 +71,7 @@ class ListTableViewController: UITableViewController {
         cell.indexLabel.text = self.allCardsPrinciple[indexPath.row].code
         cell.titleLabel.text = self.allCardsPrinciple[indexPath.row].criterion
         cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level()
-        
+        cell.levelVoiceOver = self.allCardsPrinciple[indexPath.row].level
         return cell
     }
     

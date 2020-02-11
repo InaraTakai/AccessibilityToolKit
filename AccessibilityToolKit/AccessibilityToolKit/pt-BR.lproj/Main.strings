@@ -32,8 +32,8 @@
 /* Class = "UILabel"; text = "Perceptível"; ObjectID = "hzW-YY-n9a"; */
 "hzW-YY-n9a.text" = "Perceptível";
 
-/* Class = "UINavigationItem"; title = "Ally ToolKit"; ObjectID = "iAl-Tc-1O0"; */
-"iAl-Tc-1O0.title" = "Ally ToolKit";
+/* Class = "UINavigationItem"; title = "AllyKit"; ObjectID = "iAl-Tc-1O0"; */
+"iAl-Tc-1O0.title" = "AllyKit";
 
 /* Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "iTS-nY-Lzp"; */
 "iTS-nY-Lzp.normalTitle" = "Entrar";

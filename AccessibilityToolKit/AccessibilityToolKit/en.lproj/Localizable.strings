@@ -178,13 +178,17 @@
 "Sortear" = "Random";
 "Esta versão do “toolkit” foi baseado nas cartas produzidas pelo designer UX, Marcelo Sales, com intuito de simplificar a compreensão das diretrizes WCAG (Web Content Accessibility Guidelines) e de torna-las acessíveis através desta plataforma digital. Utilize-a como fonte de pesquisa, consulta rápida, ferramenta para facilitação, disseminação de conhecimento e onde mais achar que o mesmo seja útil. A WCAG são diretrizes que fundamentam as recomendações básicas para a construção de conteúdos digitais de forma acessível a todos. Todo conteúdo adaptado neste material foi criado originalmente pelo W3C." = "This version of the “toolkit” was based on the card produced by UX designer, Marcelo Sales, with the aim of simplifying the understanding of WCAG (Web Content Accessibility Guidelines) guidelines and making them accessible through this digital platform. Use it as a source of research, quick consultation, tool for facilitation, dissemination of knowledge and where else you find it useful. WCAG are guidelines that support the basic recommendations for building digital content in a way that is accessible to everyone. All content adapted in this material was originally created by W3C.";
 "link para diretriz completa" = "link to full guideline";
+"Link para consultar a diretriz completa" = "link to check complete guideline";
+"baixo" = "low";
+"médio" = "medium";
+"alto" = "high";
 
-
-
-
-
-
-
-
-
-
+"Carta do princípio %@ com nível de conformidade %@" = "%@ principle card with %@ compliance level";
+"Recomendação da carta %@" = "%@ card recommendation";
+"Critério de sucesso número %@ %@" = "success criterion number %@ %@";
+"Abrir as cartas do princípio %@" = "Open the cards of the %@ principle";
+"Descobrir mais sobre o aplicativo" = "Find out more about the app";
+"A carta do dia é a de código %@ de critério de sucesso %@ e nível de conformidade %@" = "The card of the day is code %@ of sucess criterion %@ and level of compliance %@";
+"Carta de código %@ critério de sucesso %@ e nível de conformidade %@" = "The card is code %@ of sucess criterion %@ and level of compliance %@";
+"Exemplo" = "Example";
+"Exemplo visual do critério de sucesso" = "Visual example of the success criterion";

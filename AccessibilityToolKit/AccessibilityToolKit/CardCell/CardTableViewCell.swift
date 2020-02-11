@@ -14,6 +14,8 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
     
+    var levelVoiceOver: Level?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -27,7 +29,7 @@ class CardTableViewCell: UITableViewCell {
     func setAccessibilityCard() {
         self.isAccessibilityElement = true
         if let index = self.indexLabel?.text, let title = self.titleLabel.text {
-            self.accessibilityLabel = "Carta de número \(index) de título \(title)"
+            self.accessibilityLabel = String(format: NSLocalizedString("Carta de código %@ critério de sucesso %@ e nível de conformidade %@", comment: ""), index, title, (levelVoiceOver?.voiceOver())!)
         }
     }
     
