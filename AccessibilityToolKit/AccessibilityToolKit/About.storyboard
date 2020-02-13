@@ -46,10 +46,17 @@ A WCAG são diretrizes que fundamentam as recomendações básicas para a constr
                                                     <constraint firstAttribute="width" secondItem="nOl-29-YjJ" secondAttribute="height" multiplier="229/36.91" id="d0U-69-lrK"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyT-K5-TGR">
+                                                <rect key="frame" x="20" y="543.5" width="394" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="nOl-29-YjJ" firstAttribute="top" secondItem="Z38-gx-Ru7" secondAttribute="bottom" constant="56" id="0Ri-mx-wms"/>
+                                            <constraint firstItem="cyT-K5-TGR" firstAttribute="top" secondItem="nOl-29-YjJ" secondAttribute="bottom" constant="8" id="Dwq-3w-FbO"/>
                                             <constraint firstItem="Z38-gx-Ru7" firstAttribute="top" secondItem="cYW-yb-HnW" secondAttribute="bottom" constant="32" id="Gqx-Gv-Ep6"/>
                                             <constraint firstAttribute="trailing" secondItem="cYW-yb-HnW" secondAttribute="trailing" constant="20" id="IKb-OE-Mkd"/>
                                             <constraint firstAttribute="bottom" secondItem="nOl-29-YjJ" secondAttribute="bottom" constant="40" id="YkJ-2A-ZcO"/>
@@ -57,7 +64,9 @@ A WCAG são diretrizes que fundamentam as recomendações básicas para a constr
                                             <constraint firstItem="Z38-gx-Ru7" firstAttribute="leading" secondItem="WN5-fl-6OE" secondAttribute="leading" constant="20" id="cKf-UT-EbM"/>
                                             <constraint firstItem="cYW-yb-HnW" firstAttribute="top" secondItem="WN5-fl-6OE" secondAttribute="top" constant="32" id="eU3-TA-any"/>
                                             <constraint firstItem="nOl-29-YjJ" firstAttribute="leading" secondItem="WN5-fl-6OE" secondAttribute="leading" constant="20" id="ev7-GM-0yw"/>
+                                            <constraint firstItem="cyT-K5-TGR" firstAttribute="leading" secondItem="WN5-fl-6OE" secondAttribute="leading" constant="20" id="fj7-fR-XJe"/>
                                             <constraint firstAttribute="trailing" secondItem="Z38-gx-Ru7" secondAttribute="trailing" constant="20" id="gJl-zj-EVQ"/>
+                                            <constraint firstItem="cyT-K5-TGR" firstAttribute="trailing" secondItem="WN5-fl-6OE" secondAttribute="trailing" id="iFb-dv-jwk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
