@@ -79,7 +79,7 @@ class CardViewController: UIViewController {
     }
     
     @IBAction func btnLink(_ sender: Any) {
-        UIApplication.shared.openURL(URL(string: self.card!.link!)!)
+        UIApplication.shared.open(URL(string: self.card!.link!)!)
     }
     
     @IBAction func cancel(_ sender: Any) {
