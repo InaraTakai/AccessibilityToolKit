@@ -516,7 +516,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x20-mI-p83">
                                                 <rect key="frame" x="20" y="600.5" width="374" height="64.5"/>
-                                                <string key="text">Esse aplicativo foi criado com intuito de simplificar e facilitar o acesso as diretrizer da WCAG. Sinta-se a cvontade para utilizá-lo!</string>
+                                                <string key="text">Esse aplicativo foi criado com intuito de simplificar e facilitar o acesso as diretrizer da WCAG. Sinta-se a vontade para utilizá-lo!</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" name="ToolKitBackOpposite"/>
                                                 <nil key="highlightedColor"/>
