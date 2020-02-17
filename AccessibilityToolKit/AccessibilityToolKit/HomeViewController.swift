@@ -27,7 +27,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var perceptibleLabel: UILabel!
     
     @IBOutlet weak var dayCardLabel: UILabel!
-    @IBOutlet weak var btnRandom: UIBarButtonItem!
+    @IBOutlet weak var randomButton: UIBarButtonItem!
+    @IBOutlet weak var allCardsButton: UIButton!
     @IBOutlet weak var principleLabel: UILabel!
     @IBOutlet weak var robustLabel: UILabel!
     @IBOutlet weak var operableLabel: UILabel!
@@ -56,7 +57,7 @@ class HomeViewController: UIViewController {
         self.noticeableLabel.text  = NSLocalizedString("Perceptível", comment: "")
         self.understandableLabel.text  = NSLocalizedString("Compreensível", comment: "")
         self.aboutLabel.text  = NSLocalizedString("Sobre o aplicativo", comment: "")
-        self.btnRandom.title = NSLocalizedString("Sortear", comment: "")
+        self.randomButton.title = NSLocalizedString("Sortear", comment: "")
     }
 
     func setDayCard() {

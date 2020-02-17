@@ -12,7 +12,7 @@
         <!--AllyKit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AllyKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,7 +431,7 @@
                     <connections>
                         <outlet property="aboutLabel" destination="Ruq-Na-9Lb" id="rAh-Iz-iiE"/>
                         <outlet property="aboutView" destination="cYt-QS-OcT" id="E6T-cd-bMl"/>
-                        <outlet property="btnRandom" destination="G8y-d3-ZCJ" id="5QJ-pf-msr"/>
+                        <outlet property="allCardsButton" destination="Yae-hV-2rU" id="Dr3-bH-nmG"/>
                         <outlet property="dayCardLabel" destination="2bN-HW-p0j" id="ObI-TX-HHX"/>
                         <outlet property="dayCardView" destination="EVh-P8-PBx" id="N5y-Md-Qd4"/>
                         <outlet property="dayIndexLabel" destination="rn8-5i-PFh" id="jcg-PX-vaO"/>
@@ -443,6 +443,7 @@
                         <outlet property="operableView" destination="K6S-d8-SP3" id="oQm-lR-8G9"/>
                         <outlet property="perceptibleLabel" destination="hzW-YY-n9a" id="Jdo-tL-EbF"/>
                         <outlet property="principleLabel" destination="N0D-7x-l0C" id="E4I-fE-c1r"/>
+                        <outlet property="randomButton" destination="G8y-d3-ZCJ" id="Vt8-3R-sDb"/>
                         <outlet property="robustLabel" destination="xvd-LR-OaY" id="Fne-hD-YiH"/>
                         <outlet property="robustView" destination="7eK-3l-d6l" id="zzj-Zq-6nW"/>
                         <outlet property="stackDay" destination="RmD-gf-llc" id="1o1-8C-TX4"/>
