@@ -12,7 +12,7 @@
         <!--AllyKit-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AllyKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,12 +104,22 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderColor" value="ToolKitRed"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Princípios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-7x-l0C">
-                                                <rect key="frame" x="20" y="363" width="374" height="26.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="13v-P7-W3h">
+                                                <rect key="frame" x="20" y="363" width="374" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Princípios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-7x-l0C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="32"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-hV-2rU">
+                                                        <rect key="frame" x="191" y="0.0" width="183" height="32"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <state key="normal" title="Todas as cartas"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jy9-mk-b4p">
                                                 <rect key="frame" x="20" y="409.5" width="374" height="315"/>
                                                 <subviews>
@@ -371,21 +381,21 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="13v-P7-W3h" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="2aT-7V-fye"/>
                                             <constraint firstItem="EVh-P8-PBx" firstAttribute="top" secondItem="2bN-HW-p0j" secondAttribute="bottom" constant="20" id="31p-NL-q0d"/>
-                                            <constraint firstAttribute="trailing" secondItem="N0D-7x-l0C" secondAttribute="trailing" constant="20" id="Gmq-b9-YCg"/>
-                                            <constraint firstItem="N0D-7x-l0C" firstAttribute="top" secondItem="EVh-P8-PBx" secondAttribute="bottom" constant="40" id="Hg6-vB-a1c"/>
                                             <constraint firstItem="2bN-HW-p0j" firstAttribute="top" secondItem="wvQ-Nx-Idz" secondAttribute="top" constant="40" id="LoB-oJ-dvq"/>
+                                            <constraint firstAttribute="trailing" secondItem="13v-P7-W3h" secondAttribute="trailing" constant="20" id="S54-Ig-hW4"/>
                                             <constraint firstAttribute="trailing" secondItem="cYt-QS-OcT" secondAttribute="trailing" constant="20" id="Vkx-Ki-YBq"/>
+                                            <constraint firstItem="13v-P7-W3h" firstAttribute="top" secondItem="EVh-P8-PBx" secondAttribute="bottom" constant="40" id="a29-ZG-1ks"/>
                                             <constraint firstAttribute="trailing" secondItem="EVh-P8-PBx" secondAttribute="trailing" constant="20" id="cCE-DG-sr8"/>
                                             <constraint firstAttribute="trailing" secondItem="2bN-HW-p0j" secondAttribute="trailing" constant="20" id="cbo-FC-DzT"/>
+                                            <constraint firstItem="jy9-mk-b4p" firstAttribute="top" secondItem="13v-P7-W3h" secondAttribute="bottom" constant="14.5" id="dQt-HT-yEw"/>
                                             <constraint firstItem="cYt-QS-OcT" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="eJ2-WA-Zy0"/>
                                             <constraint firstItem="jy9-mk-b4p" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="gtF-vw-zJ4"/>
                                             <constraint firstAttribute="bottom" secondItem="cYt-QS-OcT" secondAttribute="bottom" constant="40" id="kk6-NS-s2N"/>
                                             <constraint firstItem="2bN-HW-p0j" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="lqL-6t-ZXI"/>
                                             <constraint firstAttribute="trailing" secondItem="jy9-mk-b4p" secondAttribute="trailing" constant="20" id="p6y-7v-Nrf"/>
                                             <constraint firstItem="cYt-QS-OcT" firstAttribute="top" secondItem="jy9-mk-b4p" secondAttribute="bottom" constant="40" id="p9z-fn-jdK"/>
-                                            <constraint firstItem="jy9-mk-b4p" firstAttribute="top" secondItem="N0D-7x-l0C" secondAttribute="bottom" constant="20" id="q1C-Ya-w2r"/>
-                                            <constraint firstItem="N0D-7x-l0C" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="qJV-UW-OMY"/>
                                             <constraint firstItem="EVh-P8-PBx" firstAttribute="leading" secondItem="wvQ-Nx-Idz" secondAttribute="leading" constant="20" id="zDU-or-r6B"/>
                                         </constraints>
                                     </view>
@@ -437,6 +447,7 @@
                         <outlet property="robustView" destination="7eK-3l-d6l" id="zzj-Zq-6nW"/>
                         <outlet property="stackDay" destination="RmD-gf-llc" id="1o1-8C-TX4"/>
                         <outlet property="stackDown" destination="caF-cq-bI7" id="2Ha-1b-FYj"/>
+                        <outlet property="stackTitle" destination="13v-P7-W3h" id="0G2-G3-JxN"/>
                         <outlet property="stackUp" destination="TmF-Rk-9Ud" id="j8u-ye-sbA"/>
                         <outlet property="understandableLabel" destination="0Xh-RP-hRa" id="ccm-UD-CXu"/>
                         <outlet property="understandableView" destination="tGH-gr-GML" id="glg-sd-622"/>

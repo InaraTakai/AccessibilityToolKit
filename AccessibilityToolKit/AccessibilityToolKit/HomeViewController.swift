@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet weak var dayCardView: UIView!
     @IBOutlet weak var noticiableView: UIView!
     @IBOutlet weak var operableView: UIView!
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dayLevelLabel: UILabel!
     
     @IBOutlet weak var stackDay: UIStackView!
+    @IBOutlet weak var stackTitle: UIStackView!
     @IBOutlet weak var stackUp: UIStackView!
     @IBOutlet weak var stackDown: UIStackView!
     @IBOutlet weak var perceptibleLabel: UILabel!
@@ -153,14 +154,17 @@ class ViewController: UIViewController {
             self.stackUp.axis = .vertical
             self.stackDown.axis = .vertical
             self.stackDay.axis = .vertical
+            self.stackTitle.axis = .vertical
         }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
             self.stackUp.axis = .horizontal
             self.stackDown.axis = .horizontal
             self.stackDay.axis = .vertical
+            self.stackTitle.axis = .vertical
         }else{
             self.stackUp.axis = .horizontal
             self.stackDown.axis = .horizontal
             self.stackDay.axis = .horizontal
+            self.stackTitle.axis = .horizontal
         }
        
         self.view.setNeedsLayout()
