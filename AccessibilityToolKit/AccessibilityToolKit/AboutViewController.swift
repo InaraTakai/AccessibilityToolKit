@@ -14,6 +14,7 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var linkAbout: UIButton!
     @IBOutlet weak var aboutContent: UILabel!
     @IBOutlet weak var aboutLabel: UILabel!
+    @IBOutlet weak var versionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class AboutViewController: UIViewController {
         self.aboutLabel.text  = NSLocalizedString("Sobre o aplicativo", comment: "")
         self.aboutContent.text = NSLocalizedString("Esta versão do “toolkit” foi baseado nas cartas produzidas pelo designer UX, Marcelo Sales, com intuito de simplificar a compreensão das diretrizes WCAG (Web Content Accessibility Guidelines) e de torna-las acessíveis através desta plataforma digital. Utilize-a como fonte de pesquisa, consulta rápida, ferramenta para facilitação, disseminação de conhecimento e onde mais achar que o mesmo seja útil. A WCAG são diretrizes que fundamentam as recomendações básicas para a construção de conteúdos digitais de forma acessível a todos. Todo conteúdo adaptado neste material foi criado originalmente pelo W3C.", comment: "")
         self.linkAbout.setTitle(NSLocalizedString("Link para licença de uso", comment: ""), for: .normal)
-        
+        self.versionLabel.text = NSLocalizedString("Versão do aplicativo: 1.0.2", comment: "")
        
     }
 

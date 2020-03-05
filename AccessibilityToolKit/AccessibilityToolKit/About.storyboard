@@ -116,6 +116,7 @@ A WCAG são diretrizes que fundamentam as recomendações básicas para a constr
                         <outlet property="aboutLabel" destination="cYW-yb-HnW" id="Jei-EH-Z5Z"/>
                         <outlet property="image" destination="nOl-29-YjJ" id="1GQ-w0-na6"/>
                         <outlet property="linkAbout" destination="FTe-In-0EE" id="tcG-z9-YkX"/>
+                        <outlet property="versionLabel" destination="fuX-Fg-OZN" id="XfR-uJ-vnk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFf-5I-Oe3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
