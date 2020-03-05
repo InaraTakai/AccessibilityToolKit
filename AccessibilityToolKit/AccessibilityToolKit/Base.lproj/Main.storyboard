@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-Nx-Idz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="860.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="855"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta do Dia" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-HW-p0j">
                                                 <rect key="frame" x="20" y="40" width="374" height="26.5"/>
@@ -105,23 +105,18 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="13v-P7-W3h">
-                                                <rect key="frame" x="20" y="363" width="374" height="32"/>
+                                                <rect key="frame" x="20" y="363" width="374" height="26.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Princípios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-7x-l0C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-hV-2rU">
-                                                        <rect key="frame" x="191" y="0.0" width="183" height="32"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                                        <state key="normal" title="Todas as cartas"/>
-                                                    </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jy9-mk-b4p">
-                                                <rect key="frame" x="20" y="409.5" width="374" height="315"/>
+                                                <rect key="frame" x="20" y="404" width="374" height="315"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TmF-Rk-9Ud">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="138.5"/>
@@ -310,7 +305,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-QS-OcT">
-                                                <rect key="frame" x="20" y="764.5" width="374" height="56"/>
+                                                <rect key="frame" x="20" y="759" width="374" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-about" translatesAutoresizingMaskIntoConstraints="NO" id="Byh-nQ-OMb">
                                                         <rect key="frame" x="0.0" y="15.5" width="25" height="25"/>
@@ -431,7 +426,6 @@
                     <connections>
                         <outlet property="aboutLabel" destination="Ruq-Na-9Lb" id="rAh-Iz-iiE"/>
                         <outlet property="aboutView" destination="cYt-QS-OcT" id="E6T-cd-bMl"/>
-                        <outlet property="allCardsButton" destination="Yae-hV-2rU" id="Dr3-bH-nmG"/>
                         <outlet property="dayCardLabel" destination="2bN-HW-p0j" id="ObI-TX-HHX"/>
                         <outlet property="dayCardView" destination="EVh-P8-PBx" id="N5y-Md-Qd4"/>
                         <outlet property="dayIndexLabel" destination="rn8-5i-PFh" id="jcg-PX-vaO"/>
@@ -528,7 +522,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x20-mI-p83">
                                                 <rect key="frame" x="20" y="600.5" width="374" height="64.5"/>
-                                                <string key="text">Esse aplicativo foi criado com intuito de simplificar e facilitar o acesso as diretrizer da WCAG. Sinta-se a vontade para utilizá-lo!</string>
+                                                <string key="text">Esse aplicativo foi criado com intuito de simplificar e facilitar o acesso as diretrizes da WCAG. Sinta-se a vontade para utilizá-lo!</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" name="ToolKitBackOpposite"/>
                                                 <nil key="highlightedColor"/>
@@ -589,6 +583,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YNA-cm-vyT"/>
                     </view>
+                    <connections>
+                        <outlet property="contentTutorial" destination="x20-mI-p83" id="3UQ-vt-wTP"/>
+                        <outlet property="startBtn" destination="iTS-nY-Lzp" id="TQu-tm-H4V"/>
+                        <outlet property="titleTutorial" destination="3yy-IT-2va" id="D5X-TV-Spp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NvY-VA-OTf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -623,7 +622,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vmk-hO-RsL"/>
+        <segue reference="xJS-jy-hrD"/>
         <segue reference="tgX-df-GCx"/>
     </inferredMetricsTieBreakers>
 </document>
