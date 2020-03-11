@@ -11,7 +11,7 @@ import UIKit
 class ListTableViewController: UITableViewController {
     var backColor: UIColor?
     var titleList: String?
-    var allCardsPrinciple: [Card] = []
+    var cards: [Card] = []
     var cardTitle:String?
     
     var selectedCard: Card?
@@ -37,12 +37,9 @@ class ListTableViewController: UITableViewController {
         let nib = UINib.init(nibName: self.cardCell, bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: self.cardCell)
         
-        if let cardsPrinciple = listaPrinciple[titleList!] {
-            for cardd in cardsPrinciple {
-                allCardsPrinciple.append(cardd)
-            }
-            tableView.reloadData()
-        }
+        self.cards = (listPrinciple[titleList!] ?? allCards)
+        
+        
         tableView.reloadData()
     }
     
@@ -50,7 +47,7 @@ class ListTableViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = listPrinciple[titleList!] != nil ? [NSAttributedString.Key.foregroundColor: UIColor.black] : [NSAttributedString.Key.foregroundColor: UIColor(named: "ToolKitBackOpposite")!]
     }
     
     // MARK: - Table view data source
@@ -62,23 +59,27 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.allCardsPrinciple.count
+        return self.cards.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cardCell, for: indexPath) as! CardTableViewCell
-
-        cell.indexLabel.text = self.allCardsPrinciple[indexPath.row].code
-        cell.titleLabel.text = self.allCardsPrinciple[indexPath.row].criterion
-        cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level()
-        cell.levelVoiceOver = self.allCardsPrinciple[indexPath.row].level
+        let card = self.cards[indexPath.row]
+        
+        cell.indexLabel.text = card.code
+        cell.titleLabel.text = card.criterion
+        cell.levelLabel.text = card.level.level()
+        cell.levelVoiceOver = card.level
+        cell.isInPrinciple = (listPrinciple[titleList!] != nil)
+        cell.card = card
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath as IndexPath)
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        self.selectedCard = self.allCardsPrinciple[indexPath.row]
+        self.selectedCard = self.cards[indexPath.row]
         performSegue(withIdentifier: "segueList", sender: cell)
     }
     

@@ -130,7 +130,6 @@ class HomeViewController: UIViewController {
             if let list = segue.destination as? ListTableViewController {
                 list.backColor = UIColor(named: "ToolKitRed")
                 list.titleList = NSLocalizedString("Perceptível", comment: "Princípio de acessibilidade")
-                
             }
         }else if segue.identifier == "segueOperable"{
             if let list = segue.destination as? ListTableViewController {
@@ -147,6 +146,11 @@ class HomeViewController: UIViewController {
                 list.backColor = UIColor(named: "ToolKitGreen")
                 list.titleList = NSLocalizedString("Robusto", comment: "Princípio de acessibilidade")
             }
+        }else if segue.identifier == "segueAllCards"{
+            if let list = segue.destination as? ListTableViewController {
+                list.backColor = UIColor(named: "ToolKitBackground")
+                list.titleList = NSLocalizedString("Todas as cartas", comment: "Princípio de acessibilidade")
+            }
         }
     }
     
@@ -156,16 +160,19 @@ class HomeViewController: UIViewController {
             self.stackDown.axis = .vertical
             self.stackDay.axis = .vertical
             self.stackTitle.axis = .vertical
+            self.allCardsButton.titleLabel?.textAlignment = .left
         }else if self.traitCollection.preferredContentSizeCategory > .extraLarge {
             self.stackUp.axis = .horizontal
             self.stackDown.axis = .horizontal
             self.stackDay.axis = .vertical
             self.stackTitle.axis = .vertical
+            self.allCardsButton.titleLabel?.textAlignment = .left
         }else{
             self.stackUp.axis = .horizontal
             self.stackDown.axis = .horizontal
             self.stackDay.axis = .horizontal
             self.stackTitle.axis = .horizontal
+            self.allCardsButton.titleLabel?.textAlignment = .right
         }
        
         self.view.setNeedsLayout()

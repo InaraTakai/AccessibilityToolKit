@@ -113,10 +113,13 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-hV-2rU">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-hV-2rU">
                                                         <rect key="frame" x="191" y="0.0" width="183" height="32"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <state key="normal" title="Todas as cartas"/>
+                                                        <connections>
+                                                            <segue destination="4ZP-Jb-YI3" kind="show" identifier="segueAllCards" id="rcV-17-vth"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -481,7 +484,7 @@
                 <viewControllerPlaceholder storyboardName="Card" id="s2a-hc-7xK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFZ-FW-8eT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1453" y="-62"/>
+            <point key="canvasLocation" x="1453" y="-80"/>
         </scene>
         <!--About-->
         <scene sceneID="R7T-K2-Srg">
@@ -491,7 +494,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrI-Pd-GYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447" y="122"/>
+            <point key="canvasLocation" x="1453" y="139"/>
         </scene>
         <!--List-->
         <scene sceneID="DeH-bt-AX0">
@@ -623,7 +626,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vmk-hO-RsL"/>
+        <segue reference="rcV-17-vth"/>
         <segue reference="tgX-df-GCx"/>
     </inferredMetricsTieBreakers>
 </document>
