@@ -91,7 +91,5 @@ class ListTableViewController: UITableViewController {
                 }
             }
         }
-    }
-    
-    
+    }    
 }
