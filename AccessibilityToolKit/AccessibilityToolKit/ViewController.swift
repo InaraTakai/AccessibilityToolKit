@@ -79,7 +79,7 @@ class ViewController: UIViewController {
 
         //set border of day card
         self.dayCardView.layer.borderWidth = 3
-        self.dayCardView.layer.borderColor = self.dayCard?.title.color?.cgColor
+        self.dayCardView.layer.borderColor = self.dayCard?.title.uicolor?.cgColor
 
         //set accessibility of day card
         self.dayCardView.isAccessibilityElement = true

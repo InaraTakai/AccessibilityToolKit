@@ -13,8 +13,8 @@ enum Level: Codable {
     case AA
     case AAA
     
-    var level: String {
-        var levelLabel :  String
+    var description: String {
+        var levelLabel: String
         
         switch self {
         case .A:
@@ -29,7 +29,7 @@ enum Level: Codable {
     }
     
     var voiceOver: String {
-        var voiceOverLabel :  String
+        var voiceOverLabel: String
         
         switch self {
         case .A:

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 enum Title: Codable {
     case Noticeable
@@ -16,7 +17,7 @@ enum Title: Codable {
     case Robust
     
     var name: String {
-        var name :  String
+        var name: String
         
         switch self {
         case .Noticeable:
@@ -31,8 +32,41 @@ enum Title: Codable {
         return name
     }
     
-    var color: UIColor? {
-        var color :  UIColor?
+    var color: Color {
+        var color: Color
+        
+        switch self {
+        case .Noticeable:
+            color = .toolKit.red
+        case .Operable:
+            color = .toolKit.blue
+        case .Understandable:
+            color = .toolKit.yellow
+        case .Robust:
+            color = .toolKit.green
+        }
+        
+        return color
+    }
+    
+    var symbol: Image {
+        var symbol: Image
+        
+        switch self {
+        case .Noticeable:
+            symbol = Image("NoticeableSymbol")
+        case .Operable:
+            symbol = Image("OperableSymbol")
+        case .Understandable:
+            symbol = Image("UnderstandableSymbol")
+        case .Robust:
+            symbol = Image("RobustSymbol")
+        }
+        return symbol
+    }
+    
+    var uicolor: UIColor? {
+        var color: UIColor?
         
         switch self {
         case .Noticeable:
@@ -48,8 +82,8 @@ enum Title: Codable {
         return color
     }
     
-    var symbol: UIImage? {
-        var symbol :  UIImage?
+    var uisymbol: UIImage? {
+        var symbol: UIImage?
         
         switch self {
         case .Noticeable:

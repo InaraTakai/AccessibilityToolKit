@@ -70,7 +70,7 @@ class ListTableViewController: UITableViewController {
 
         cell.indexLabel.text = self.allCardsPrinciple[indexPath.row].code
         cell.titleLabel.text = self.allCardsPrinciple[indexPath.row].criterion
-        cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level
+        cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.description
         cell.levelVoiceOver = self.allCardsPrinciple[indexPath.row].level
         return cell
     }

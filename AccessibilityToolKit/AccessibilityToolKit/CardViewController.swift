@@ -56,10 +56,10 @@ class CardViewController: UIViewController {
     }
     
     func setCard(){
-        self.colorView.backgroundColor = self.card?.title.color
-        self.symbolImage.image = self.card?.title.symbol
+        self.colorView.backgroundColor = self.card?.title.uicolor
+        self.symbolImage.image = self.card?.title.uisymbol
         self.principleLabel.text = self.card?.title.name
-        self.levelLabel.text = self.card?.level.level
+        self.levelLabel.text = self.card?.level.description
         self.guideline.text = self.card?.guideline
         self.criterionLabel.text = self.card?.criterion
         self.codeLabel.text = self.card?.code
