@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-enum Title {
+enum Title: Codable {
     case Noticeable
     case Operable
     case Understandable
     case Robust
     
-    func name() -> String{
+    var name: String {
         var name :  String
         
         switch self {
@@ -31,7 +31,7 @@ enum Title {
         return name
     }
     
-    func color() -> UIColor?{
+    var color: UIColor? {
         var color :  UIColor?
         
         switch self {
@@ -44,10 +44,11 @@ enum Title {
         case .Robust:
             color = UIColor(named: "ToolKitGreen")
         }
+        
         return color
     }
     
-    func symbol() -> UIImage?{
+    var symbol: UIImage? {
         var symbol :  UIImage?
         
         switch self {

@@ -2,7 +2,7 @@
 //  CardTableViewCell.swift
 //  AccessibilityToolKit
 //
-//  Created by Gabriel Ferreira on 31/01/20.
+//  Created by Gab Ferreira on 31/01/20.
 //  Copyright © 2020 Inara Takashi. All rights reserved.
 //
 
@@ -29,7 +29,9 @@ class CardTableViewCell: UITableViewCell {
     func setAccessibilityCard() {
         self.isAccessibilityElement = true
         if let index = self.indexLabel?.text, let title = self.titleLabel.text {
-            self.accessibilityLabel = String(format: NSLocalizedString("Carta de código %@ critério de sucesso %@ e nível de conformidade %@", comment: ""), index, title, (levelVoiceOver?.voiceOver())!)
+            self.accessibilityLabel = String(format: NSLocalizedString("Carta de código %@ critério de sucesso %@ e nível de conformidade %@", comment: ""),
+                                             index,
+                                             title, (levelVoiceOver?.voiceOver)!)
         }
     }
     

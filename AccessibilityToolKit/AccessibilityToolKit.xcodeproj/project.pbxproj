@@ -27,6 +27,8 @@
 		2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049423E99EE1005390BE /* ListTableViewController.swift */; };
 		2AF1049723E9C972005390BE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049623E9C972005390BE /* CardViewController.swift */; };
 		2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049823EA154F005390BE /* AboutViewController.swift */; };
+		DD265E06299AEC8A00F0612F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E05299AEC8A00F0612F /* HomeView.swift */; };
+		DD265E0A299AF0CB00F0612F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E09299AF0CB00F0612F /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,9 @@
 		2AF1049423E99EE1005390BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		2AF1049623E9C972005390BE /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		2AF1049823EA154F005390BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		DD265E05299AEC8A00F0612F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DD265E07299AEFFD00F0612F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DD265E09299AF0CB00F0612F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,8 @@
 		0DCB7D8D23E44B7700A577B9 /* AccessibilityToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				DD265E08299AF0B300F0612F /* Utils */,
+				DD265E03299AEBA200F0612F /* Scenes */,
 				0DCB7DAD23E9989300A577B9 /* Model */,
 				2A6FD52423E4779E00054D33 /* CardCell */,
 				0DCB7D8E23E44B7700A577B9 /* AppDelegate.swift */,
@@ -126,6 +133,30 @@
 				2A6FD52123E4737900054D33 /* CardTableViewCell.xib */,
 			);
 			path = CardCell;
+			sourceTree = "<group>";
+		};
+		DD265E03299AEBA200F0612F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DD265E04299AEBBA00F0612F /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DD265E04299AEBBA00F0612F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD265E05299AEC8A00F0612F /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DD265E08299AF0B300F0612F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD265E09299AF0CB00F0612F /* Fonts.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD265E0A299AF0CB00F0612F /* Fonts.swift in Sources */,
 				0DCB7D9323E44B7700A577B9 /* ViewController.swift in Sources */,
 				0DCB7DB123E9995F00A577B9 /* Card.swift in Sources */,
+				DD265E06299AEC8A00F0612F /* HomeView.swift in Sources */,
 				0DCB7DB323E999A800A577B9 /* Title.swift in Sources */,
 				0DCB7DB723E99F2400A577B9 /* Cards.swift in Sources */,
 				2AF1049723E9C972005390BE /* CardViewController.swift in Sources */,
@@ -246,6 +279,7 @@
 			children = (
 				0DCB7DC523ECAB8500A577B9 /* Base */,
 				0DCB7DCC23ECAEDB00A577B9 /* en */,
+				DD265E07299AEFFD00F0612F /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -376,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = AccessibilityToolKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

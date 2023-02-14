@@ -2,7 +2,7 @@
 //  AboutViewController.swift
 //  AccessibilityToolKit
 //
-//  Created by Gabriel Ferreira on 04/02/20.
+//  Created by Gab Ferreira on 04/02/20.
 //  Copyright © 2020 Inara Takashi. All rights reserved.
 //
 

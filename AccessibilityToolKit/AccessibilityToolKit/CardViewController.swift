@@ -2,7 +2,7 @@
 //  CardViewController.swift
 //  AccessibilityToolKit
 //
-//  Created by Gabriel Ferreira on 04/02/20.
+//  Created by Gab Ferreira on 04/02/20.
 //  Copyright © 2020 Inara Takashi. All rights reserved.
 //
 
@@ -42,7 +42,9 @@ class CardViewController: UIViewController {
         }
         
         
-        let myStringTitleLevel = String(format: NSLocalizedString("Carta do princípio %@ com nível de conformidade %@", comment: ""), (self.card?.title.name())!, (self.card?.level.voiceOver())!)
+        let myStringTitleLevel = String(format: NSLocalizedString("Carta do princípio %@ com nível de conformidade %@", comment: ""),
+                                        (self.card?.title.name)!,
+                                        (self.card?.level.voiceOver)!)
         let myStringGuideline = String(format: NSLocalizedString("Recomendação da carta %@", comment: ""), (self.card?.guideline)!)
         let myStringTitleCode = String(format: NSLocalizedString("Critério de sucesso número %@ %@", comment: ""), (self.card?.code)!, (self.card?.criterion)!)
         self.stackTitleLevel.accessibilityLabel = myStringTitleLevel
@@ -54,10 +56,10 @@ class CardViewController: UIViewController {
     }
     
     func setCard(){
-        self.colorView.backgroundColor = self.card?.title.color()
-        self.symbolImage.image = self.card?.title.symbol()
-        self.principleLabel.text = self.card?.title.name()
-        self.levelLabel.text = self.card?.level.level()
+        self.colorView.backgroundColor = self.card?.title.color
+        self.symbolImage.image = self.card?.title.symbol
+        self.principleLabel.text = self.card?.title.name
+        self.levelLabel.text = self.card?.level.level
         self.guideline.text = self.card?.guideline
         self.criterionLabel.text = self.card?.criterion
         self.codeLabel.text = self.card?.code
@@ -79,7 +81,11 @@ class CardViewController: UIViewController {
     }
     
     @IBAction func btnLink(_ sender: Any) {
-        UIApplication.shared.openURL(URL(string: self.card!.link!)!)
+        guard let link = self.card?.link,
+              let url = URL(string: link)
+        else { return }
+        
+        UIApplication.shared.open(url)
     }
     
     @IBAction func cancel(_ sender: Any) {

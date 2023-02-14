@@ -246,36 +246,5 @@ let allCards = [card1,
                 card78]
 
 let listaPrinciple: [String: [Card]] = Dictionary(grouping: allCards) { (element) -> String in
-    return element.title.name()
+    return element.title.name
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

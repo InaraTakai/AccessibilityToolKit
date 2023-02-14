@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct Card {
-    
+struct Card: Codable {
     var title: Title
     var level: Level
     var code: String?

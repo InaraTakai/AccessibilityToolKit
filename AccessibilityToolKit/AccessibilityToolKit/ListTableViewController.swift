@@ -2,7 +2,7 @@
 //  ListTableViewController.swift
 //  AccessibilityToolKit
 //
-//  Created by Gabriel Ferreira on 04/02/20.
+//  Created by Gab Ferreira on 04/02/20.
 //  Copyright © 2020 Inara Takashi. All rights reserved.
 //
 
@@ -70,7 +70,7 @@ class ListTableViewController: UITableViewController {
 
         cell.indexLabel.text = self.allCardsPrinciple[indexPath.row].code
         cell.titleLabel.text = self.allCardsPrinciple[indexPath.row].criterion
-        cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level()
+        cell.levelLabel.text = self.allCardsPrinciple[indexPath.row].level.level
         cell.levelVoiceOver = self.allCardsPrinciple[indexPath.row].level
         return cell
     }

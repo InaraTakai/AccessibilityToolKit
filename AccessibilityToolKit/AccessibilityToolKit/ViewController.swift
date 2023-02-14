@@ -79,12 +79,12 @@ class ViewController: UIViewController {
 
         //set border of day card
         self.dayCardView.layer.borderWidth = 3
-        self.dayCardView.layer.borderColor = self.dayCard?.title.color()?.cgColor
+        self.dayCardView.layer.borderColor = self.dayCard?.title.color?.cgColor
 
         //set accessibility of day card
         self.dayCardView.isAccessibilityElement = true
         if let index = self.dayIndexLabel?.text, let title = self.dayTitleLabel.text {
-            self.dayCardView.accessibilityLabel = String(format: NSLocalizedString("A carta do dia é a de código %@ de critério de sucesso %@ e nível de conformidade %@", comment: ""), index, title, (self.dayCard?.level.voiceOver())!)
+            self.dayCardView.accessibilityLabel = String(format: NSLocalizedString("A carta do dia é a de código %@ de critério de sucesso %@ e nível de conformidade %@", comment: ""), index, title, (self.dayCard?.level.voiceOver)!)
         }
     }
     
