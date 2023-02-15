@@ -13,7 +13,10 @@ struct HomeView: View {
         let dayCardText = NSLocalizedString("Carta do Dia", comment: String())
         let principleText = NSLocalizedString("Princípios", comment: String())
         let allyText = NSLocalizedString("Ally ToolKit", comment: String())
+        let randomText = NSLocalizedString("Sortear", comment: String())
+        let allCardsText = NSLocalizedString("Todas as Cartas", comment: String())
         let card = card1
+        
         NavigationView {
             ZStack {
                 Color.toolKit.background
@@ -23,19 +26,28 @@ struct HomeView: View {
                         Text(dayCardText)
                             .title()
                             .padding(.top, 32)
-                        CardView(title: card.title,
-                                 code: card.code ?? String(),
-                                 guideline: card.guideline ?? String(),
-                                 level: card.level)
+                        CardView(card: card, environment: .one(title: card.title))
                         .padding(.top, 24)
-                        Text(principleText)
-                            .title()
-                            .padding(.top, 32)
+                        HStack {
+                            Text(principleText)
+                                .title()
+                            NavigationLink {
+                                ListView(cards: allCards, isOneTitle: false)
+                            } label: {
+                                Text(allCardsText)
+                            }
+                        }
+                        .padding(.top, 32)
                         principles
                     }
                     .padding(.horizontal, 20)
                 }
-                .navigationTitle(allyText)
+            }
+            .navigationTitle(allyText)
+            .toolbar {
+                Button(randomText) {
+                    print(randomText)
+                }
             }
         }
     }
@@ -43,12 +55,28 @@ struct HomeView: View {
     var principles: some View {
         VStack(spacing: 16) {
             HStack(spacing: 16) {
-                TitleView(title: .Noticeable)
-                TitleView(title: .Operable)
+                Button {
+                    print(Title.Noticeable)
+                } label: {
+                    TitleView(title: .Noticeable)
+                }
+                Button {
+                    print(Title.Operable)
+                } label: {
+                    TitleView(title: .Operable)
+                }
             }
             HStack(spacing: 16) {
-                TitleView(title: .Understandable)
-                TitleView(title: .Robust)
+                Button {
+                    print(Title.Understandable)
+                } label: {
+                    TitleView(title: .Understandable)
+                }
+                Button {
+                    print(Title.Robust)
+                } label: {
+                    TitleView(title: .Robust)
+                }
             }
         }
     }

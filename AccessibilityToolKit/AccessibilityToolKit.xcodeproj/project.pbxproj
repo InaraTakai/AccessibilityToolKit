@@ -28,12 +28,15 @@
 		2AF1049723E9C972005390BE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049623E9C972005390BE /* CardViewController.swift */; };
 		2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049823EA154F005390BE /* AboutViewController.swift */; };
 		DD265E06299AEC8A00F0612F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E05299AEC8A00F0612F /* HomeView.swift */; };
-		DD265E0A299AF0CB00F0612F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E09299AF0CB00F0612F /* Fonts.swift */; };
 		DD265E0C299BA26700F0612F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E0B299BA26700F0612F /* Color+Extension.swift */; };
 		DD265E0F299BA2F000F0612F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E0E299BA2F000F0612F /* CardView.swift */; };
 		DD265E11299BA88D00F0612F /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E10299BA88D00F0612F /* LevelView.swift */; };
 		DD265E13299BAB8E00F0612F /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E12299BAB8E00F0612F /* Text+Extension.swift */; };
 		DD265E15299BB1F000F0612F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E14299BB1F000F0612F /* TitleView.swift */; };
+		DD265E18299BC92C00F0612F /* ModalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E17299BC92C00F0612F /* ModalCardView.swift */; };
+		DD265E1A299BCA3D00F0612F /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E19299BCA3D00F0612F /* Image+Extension.swift */; };
+		DDABCB20299D8F04003D610D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABCB1F299D8F04003D610D /* ListView.swift */; };
+		DDABCB22299D9170003D610D /* CardEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABCB21299D9170003D610D /* CardEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,12 +67,15 @@
 		2AF1049823EA154F005390BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		DD265E05299AEC8A00F0612F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD265E07299AEFFD00F0612F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		DD265E09299AF0CB00F0612F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		DD265E0B299BA26700F0612F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		DD265E0E299BA2F000F0612F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DD265E10299BA88D00F0612F /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		DD265E12299BAB8E00F0612F /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
 		DD265E14299BB1F000F0612F /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		DD265E17299BC92C00F0612F /* ModalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCardView.swift; sourceTree = "<group>"; };
+		DD265E19299BCA3D00F0612F /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		DDABCB1F299D8F04003D610D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DDABCB21299D9170003D610D /* CardEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 				0DCB7DB023E9995F00A577B9 /* Card.swift */,
 				0DCB7DB223E999A800A577B9 /* Title.swift */,
 				0DCB7DB423E999B600A577B9 /* Level.swift */,
+				DDABCB21299D9170003D610D /* CardEnvironment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +156,8 @@
 		DD265E03299AEBA200F0612F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DDABCB1E299D8EF1003D610D /* List */,
+				DD265E16299BC8ED00F0612F /* Card */,
 				DD265E04299AEBBA00F0612F /* Home */,
 			);
 			path = Scenes;
@@ -165,9 +174,9 @@
 		DD265E08299AF0B300F0612F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				DD265E09299AF0CB00F0612F /* Fonts.swift */,
 				DD265E0B299BA26700F0612F /* Color+Extension.swift */,
 				DD265E12299BAB8E00F0612F /* Text+Extension.swift */,
+				DD265E19299BCA3D00F0612F /* Image+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -180,6 +189,22 @@
 				DD265E14299BB1F000F0612F /* TitleView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		DD265E16299BC8ED00F0612F /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				DD265E17299BC92C00F0612F /* ModalCardView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		DDABCB1E299D8EF1003D610D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DDABCB1F299D8F04003D610D /* ListView.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD265E0A299AF0CB00F0612F /* Fonts.swift in Sources */,
 				DD265E0C299BA26700F0612F /* Color+Extension.swift in Sources */,
 				0DCB7D9323E44B7700A577B9 /* ViewController.swift in Sources */,
 				0DCB7DB123E9995F00A577B9 /* Card.swift in Sources */,
+				DDABCB22299D9170003D610D /* CardEnvironment.swift in Sources */,
 				DD265E13299BAB8E00F0612F /* Text+Extension.swift in Sources */,
 				DD265E06299AEC8A00F0612F /* HomeView.swift in Sources */,
 				0DCB7DB323E999A800A577B9 /* Title.swift in Sources */,
@@ -275,8 +300,11 @@
 				2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */,
 				DD265E15299BB1F000F0612F /* TitleView.swift in Sources */,
 				2AB6365223EC8315006C63C9 /* TutorialViewController.swift in Sources */,
+				DD265E1A299BCA3D00F0612F /* Image+Extension.swift in Sources */,
 				DD265E11299BA88D00F0612F /* LevelView.swift in Sources */,
+				DDABCB20299D8F04003D610D /* ListView.swift in Sources */,
 				DD265E0F299BA2F000F0612F /* CardView.swift in Sources */,
+				DD265E18299BC92C00F0612F /* ModalCardView.swift in Sources */,
 				0DCB7DB523E999B600A577B9 /* Level.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

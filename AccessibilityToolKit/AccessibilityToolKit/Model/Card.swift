@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct Card: Codable {
+struct Card: Codable, Identifiable {
+    var id = UUID()
+    
     var title: Title
     var level: Level
     var code: String?

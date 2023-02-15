@@ -33,5 +33,9 @@ extension Color {
         static var green: Color {
             Color("ToolKitGreen")
         }
+        
+        static var black: Color {
+            Color("ToolKitBlack")
+        }
     }
 }

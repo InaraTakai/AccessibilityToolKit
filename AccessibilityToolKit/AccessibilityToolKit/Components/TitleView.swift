@@ -18,12 +18,7 @@ struct TitleView: View {
             VStack {
                 HStack {
                     Spacer()
-                    title.symbol
-                        .resizable()
-                        .frame(
-                            width: 24,
-                            height: 24,
-                            alignment: .trailing)
+                    title.symbol.symbol()
                         .padding(EdgeInsets(top: 16,
                                             leading: 0,
                                             bottom: 0,
@@ -31,6 +26,7 @@ struct TitleView: View {
                 }
                 Spacer()
                 Text(title.name)
+                    .foregroundColor(.toolKit.black)
                     .bold()
                     .font(.body)
                     .frame(maxWidth: .infinity,
