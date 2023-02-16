@@ -2,7 +2,7 @@
 //  ListView.swift
 //  AccessibilityToolKit
 //
-//  Created by Ribeiro Ferreira on 15/02/23.
+//  Created by Gab Ferreira on 15/02/23.
 //  Copyright © 2023 Inara Takashi. All rights reserved.
 //
 
@@ -10,20 +10,42 @@ import SwiftUI
 
 struct ListView: View {
     var cards: [Card]
-    var isOneTitle: Bool
+    var title: Title?
     
     var body: some View {
-        List(cards) { card in
-            let environment: CardEnvironment = isOneTitle ? .listTitle : .listAll(title: card.title)
-            CardView(card: card, environment: environment)
-                .listRowSeparator(.hidden)
+        let allCardsText = NSLocalizedString("Todas as Cartas", comment: String())
+        
+        ScrollView {
+            ZStack {
+                title?.color
+                LazyVStack {
+                    ForEach(cards) { card in
+                        let environment: CardEnvironment = title != nil ? .listTitle : .listAll(title: card.title)
+                        CardView(card: card, environment: environment)
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.vertical, 32)
+            }
         }
-        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .toolbarBackground(title?.color ?? .toolKit.background, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .navigationTitle(Text(title?.name ?? allCardsText))
+        .foregroundColor(title != nil ? .toolKit.black : .toolKit.backOpposite)
     }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(cards: allCards, isOneTitle: false)
+        Group {
+            NavigationView {
+                ListView(cards: allCards)
+            }
+            
+            NavigationView {
+                ListView(cards: allCards)
+            }
+            .environment(\.colorScheme, .dark)
+        }
     }
 }

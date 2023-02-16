@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var showRandom: Bool = false
+    
     var body: some View {
         let dayCardText = NSLocalizedString("Carta do Dia", comment: String())
         let principleText = NSLocalizedString("Princípios", comment: String())
@@ -32,7 +34,7 @@ struct HomeView: View {
                             Text(principleText)
                                 .title()
                             NavigationLink {
-                                ListView(cards: allCards, isOneTitle: false)
+                                ListView(cards: allCards)
                             } label: {
                                 Text(allCardsText)
                             }
@@ -45,8 +47,12 @@ struct HomeView: View {
             }
             .navigationTitle(allyText)
             .toolbar {
-                Button(randomText) {
-                    print(randomText)
+                Button(randomText, action: {
+                    showRandom.toggle()
+                })
+                .sheet(isPresented: $showRandom) {
+                    let card = allCards.randomElement()
+                    ModalCardView(card: card ?? card1)
                 }
             }
         }
@@ -55,25 +61,31 @@ struct HomeView: View {
     var principles: some View {
         VStack(spacing: 16) {
             HStack(spacing: 16) {
-                Button {
-                    print(Title.Noticeable)
+                NavigationLink {
+                    ListView(cards: listaPrinciple[Title.Noticeable.name] ?? [],
+                             title: .Noticeable)
                 } label: {
                     TitleView(title: .Noticeable)
                 }
-                Button {
-                    print(Title.Operable)
+                
+                NavigationLink {
+                    ListView(cards: listaPrinciple[Title.Operable.name] ?? [],
+                             title: .Operable)
                 } label: {
                     TitleView(title: .Operable)
                 }
             }
             HStack(spacing: 16) {
-                Button {
-                    print(Title.Understandable)
+                NavigationLink {
+                    ListView(cards: listaPrinciple[Title.Understandable.name] ?? [],
+                             title: .Understandable)
                 } label: {
                     TitleView(title: .Understandable)
                 }
-                Button {
-                    print(Title.Robust)
+                
+                NavigationLink {
+                    ListView(cards: listaPrinciple[Title.Robust.name] ?? [],
+                             title: .Robust)
                 } label: {
                     TitleView(title: .Robust)
                 }
