@@ -19,5 +19,9 @@ struct Card: Codable, Identifiable {
     var description: String?
     var link: String?
     var image: String?
+    
+    static var placeholder: Card {
+        return Card(title: .Operable, level: .A)
+    }
 }
 

@@ -27,7 +27,7 @@
 		2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049423E99EE1005390BE /* ListTableViewController.swift */; };
 		2AF1049723E9C972005390BE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049623E9C972005390BE /* CardViewController.swift */; };
 		2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1049823EA154F005390BE /* AboutViewController.swift */; };
-		DD265E06299AEC8A00F0612F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E05299AEC8A00F0612F /* HomeView.swift */; };
+		DD265E06299AEC8A00F0612F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E05299AEC8A00F0612F /* HomeScreen.swift */; };
 		DD265E0C299BA26700F0612F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E0B299BA26700F0612F /* Color+Extension.swift */; };
 		DD265E0F299BA2F000F0612F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E0E299BA2F000F0612F /* CardView.swift */; };
 		DD265E11299BA88D00F0612F /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E10299BA88D00F0612F /* LevelView.swift */; };
@@ -37,6 +37,10 @@
 		DD265E1A299BCA3D00F0612F /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E19299BCA3D00F0612F /* Image+Extension.swift */; };
 		DDABCB20299D8F04003D610D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABCB1F299D8F04003D610D /* ListView.swift */; };
 		DDABCB22299D9170003D610D /* CardEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABCB21299D9170003D610D /* CardEnvironment.swift */; };
+		DDC7172B29A6F627001F0AA2 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7172A29A6F627001F0AA2 /* HomeWorker.swift */; };
+		DDC7172F29A80338001F0AA2 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7172E29A80338001F0AA2 /* HomeFactory.swift */; };
+		DDC7173129A80AE9001F0AA2 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7173029A80AE9001F0AA2 /* HomeModels.swift */; };
+		DDC7173329A83DBF001F0AA2 /* AccessibilityToolKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7173229A83DBF001F0AA2 /* AccessibilityToolKitApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +69,7 @@
 		2AF1049423E99EE1005390BE /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		2AF1049623E9C972005390BE /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		2AF1049823EA154F005390BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		DD265E05299AEC8A00F0612F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DD265E05299AEC8A00F0612F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		DD265E07299AEFFD00F0612F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD265E0B299BA26700F0612F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		DD265E0E299BA2F000F0612F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,10 @@
 		DD265E19299BCA3D00F0612F /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		DDABCB1F299D8F04003D610D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DDABCB21299D9170003D610D /* CardEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnvironment.swift; sourceTree = "<group>"; };
+		DDC7172A29A6F627001F0AA2 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		DDC7172E29A80338001F0AA2 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		DDC7173029A80AE9001F0AA2 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		DDC7173229A83DBF001F0AA2 /* AccessibilityToolKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityToolKitApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,7 @@
 				2AB6365123EC8315006C63C9 /* TutorialViewController.swift */,
 				0DCB7DB623E99F2400A577B9 /* Cards.swift */,
 				0DCB7DC423ECAB8500A577B9 /* Localizable.strings */,
+				DDC7173229A83DBF001F0AA2 /* AccessibilityToolKitApp.swift */,
 			);
 			path = AccessibilityToolKit;
 			sourceTree = "<group>";
@@ -166,7 +175,10 @@
 		DD265E04299AEBBA00F0612F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DD265E05299AEC8A00F0612F /* HomeView.swift */,
+				DD265E05299AEC8A00F0612F /* HomeScreen.swift */,
+				DDC7172A29A6F627001F0AA2 /* HomeWorker.swift */,
+				DDC7172E29A80338001F0AA2 /* HomeFactory.swift */,
+				DDC7173029A80AE9001F0AA2 /* HomeModels.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -289,11 +301,12 @@
 				0DCB7DB123E9995F00A577B9 /* Card.swift in Sources */,
 				DDABCB22299D9170003D610D /* CardEnvironment.swift in Sources */,
 				DD265E13299BAB8E00F0612F /* Text+Extension.swift in Sources */,
-				DD265E06299AEC8A00F0612F /* HomeView.swift in Sources */,
+				DD265E06299AEC8A00F0612F /* HomeScreen.swift in Sources */,
 				0DCB7DB323E999A800A577B9 /* Title.swift in Sources */,
 				0DCB7DB723E99F2400A577B9 /* Cards.swift in Sources */,
 				2AF1049723E9C972005390BE /* CardViewController.swift in Sources */,
 				0DCB7D8F23E44B7700A577B9 /* AppDelegate.swift in Sources */,
+				DDC7173129A80AE9001F0AA2 /* HomeModels.swift in Sources */,
 				0DCB7D9123E44B7700A577B9 /* SceneDelegate.swift in Sources */,
 				2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */,
 				2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */,
@@ -304,7 +317,10 @@
 				DD265E11299BA88D00F0612F /* LevelView.swift in Sources */,
 				DDABCB20299D8F04003D610D /* ListView.swift in Sources */,
 				DD265E0F299BA2F000F0612F /* CardView.swift in Sources */,
+				DDC7173329A83DBF001F0AA2 /* AccessibilityToolKitApp.swift in Sources */,
 				DD265E18299BC92C00F0612F /* ModalCardView.swift in Sources */,
+				DDC7172F29A80338001F0AA2 /* HomeFactory.swift in Sources */,
+				DDC7172B29A6F627001F0AA2 /* HomeWorker.swift in Sources */,
 				0DCB7DB523E999B600A577B9 /* Level.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

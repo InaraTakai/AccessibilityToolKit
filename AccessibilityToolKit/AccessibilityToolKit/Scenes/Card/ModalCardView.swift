@@ -14,6 +14,8 @@ struct ModalCardView: View {
     
     var body: some View {
         let dismissText = NSLocalizedString("Fechar", comment: String())
+        let descriptionText = NSLocalizedString("Descrição", comment: String())
+        let linkText = NSLocalizedString("Link para diretriz completa", comment: String())
         ScrollView {
             VStack {
                 HStack {
@@ -67,6 +69,31 @@ struct ModalCardView: View {
                             .font(.title2)
                             .bold()
                     }
+                    .padding(.vertical, 32)
+                    Text(descriptionText)
+                        .bold()
+                        .font(.body)
+                        .frame(maxWidth: .infinity,
+                               alignment: .leading)
+                    Text(card.description ?? String())
+                        .font(.body)
+                        .frame(maxWidth: .infinity,
+                               alignment: .leading)
+                    
+                    Rectangle()
+                        .frame(height: 1)
+                        .foregroundColor(.toolKit.backOpposite)
+                        .padding(.top, 32)
+                    Button {
+                        print(linkText)
+                    } label: {
+                        Text(linkText)
+                    }
+                    .padding(.vertical, 24)
+                    Rectangle()
+                        .frame(height: 1)
+                        .foregroundColor(.toolKit.backOpposite)
+                    
                 }
                 .padding(.horizontal, 20)
             }
