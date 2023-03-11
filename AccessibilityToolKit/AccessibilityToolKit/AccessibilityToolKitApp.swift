@@ -14,7 +14,7 @@ struct AccessibilityToolKitApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeScreen(worker: HomeWorker())
+            HomeFactory.getScreen()
         }
     }
 }

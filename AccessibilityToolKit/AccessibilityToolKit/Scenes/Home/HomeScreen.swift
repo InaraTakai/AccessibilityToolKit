@@ -9,18 +9,12 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    private var viewModel: Home.ViewModel = Home.ViewModel(worker: HomeWorker())
+    private var viewModel: HomeModel = HomeModel(worker: HomeWorker())
     @State var showRandom: Bool = false
     @State private var dayCard = Card.placeholder
     @State private var randomCard = Card.placeholder
     
     var body: some View {
-        let dayCardText = NSLocalizedString("Carta do Dia", comment: String())
-        let principleText = NSLocalizedString("Princípios", comment: String())
-        let allyText = NSLocalizedString("Ally ToolKit", comment: String())
-        let randomText = NSLocalizedString("Sortear", comment: String())
-        let allCardsText = NSLocalizedString("Todas as Cartas", comment: String())
-        let aboutText = NSLocalizedString("Sobre o aplicativo", comment: String())
         
         NavigationStack {
             ZStack {
@@ -28,18 +22,18 @@ struct HomeScreen: View {
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack {
-                        Text(dayCardText)
+                        Text(HomeModel.Strings.dayCardText)
                             .title()
                             .padding(.top, 32)
-                        CardView(card: dayCard, environment: .one(title: dayCard.title))
+                        CardView(card: dayCard, environment: .one(title: dayCard.title), isDayCard: true)
                         .padding(.top, 24)
                         HStack {
-                            Text(principleText)
+                            Text(HomeModel.Strings.principleText)
                                 .title()
                             NavigationLink {
-                                ListView(cards: allCards)
+                                ListFactory.getScreen()
                             } label: {
-                                Text(allCardsText)
+                                Text(HomeModel.Strings.allCardsText)
                             }
                         }
                         .padding(.top, 32)
@@ -49,7 +43,7 @@ struct HomeScreen: View {
                             .frame(height: 1)
                             .foregroundColor(.toolKit.backOpposite)
                             .padding(.top, 32)
-                        Text(aboutText)
+                        Text(HomeModel.Strings.aboutText)
                             .font(.body)
                             .bold()
                             .padding(.vertical, 16)
@@ -62,12 +56,14 @@ struct HomeScreen: View {
                     .padding(.horizontal, 20)
                 }
             }
-            .navigationTitle(allyText)
+            .navigationTitle(HomeModel.Strings.allyText)
             .toolbar {
-                Button(randomText, action: getRandomCard)
-                    .sheet(isPresented: $showRandom) {
-                        ModalCardView(card: randomCard)
-                    }
+                Button(HomeModel.Strings.randomText) {
+                    showRandom.toggle()
+                }
+                .sheet(isPresented: $showRandom) {
+                    ModalCardFactory.getScreen()
+                }
             }
             .onAppear(perform: getDayCard)
         }
@@ -77,32 +73,28 @@ struct HomeScreen: View {
         VStack(spacing: 16) {
             HStack(spacing: 16) {
                 NavigationLink {
-                    ListView(cards: listaPrinciple[Title.Noticeable.name] ?? [],
-                             title: .Noticeable)
+                    ListFactory.getScreen(title: .noticeable)
                 } label: {
-                    TitleView(title: .Noticeable)
+                    TitleView(title: .noticeable)
                 }
                 
                 NavigationLink {
-                    ListView(cards: listaPrinciple[Title.Operable.name] ?? [],
-                             title: .Operable)
+                    ListFactory.getScreen(title: .operable)
                 } label: {
-                    TitleView(title: .Operable)
+                    TitleView(title: .operable)
                 }
             }
             HStack(spacing: 16) {
                 NavigationLink {
-                    ListView(cards: listaPrinciple[Title.Understandable.name] ?? [],
-                             title: .Understandable)
+                    ListFactory.getScreen(title: .understandable)
                 } label: {
-                    TitleView(title: .Understandable)
+                    TitleView(title: .understandable)
                 }
                 
                 NavigationLink {
-                    ListView(cards: listaPrinciple[Title.Robust.name] ?? [],
-                             title: .Robust)
+                    ListFactory.getScreen(title: .robust)
                 } label: {
-                    TitleView(title: .Robust)
+                    TitleView(title: .robust)
                 }
             }
         }
@@ -118,19 +110,8 @@ struct HomeScreen: View {
         }
     }
     
-    func getRandomCard() {
-        Task {
-            do {
-                randomCard = try await viewModel.randomCard
-                showRandom.toggle()
-            } catch let error {
-                print(error)
-            }
-        }
-    }
-    
     init(worker: HomeWorkProtocol) {
-        viewModel = Home.ViewModel(worker: worker)
+        viewModel = HomeModel(worker: worker)
     }
 }
 

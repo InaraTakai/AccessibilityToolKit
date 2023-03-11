@@ -2,15 +2,16 @@
 //  ModalCardView.swift
 //  AccessibilityToolKit
 //
-//  Created by Ribeiro Ferreira on 14/02/23.
+//  Created by Gab Ferreira on 14/02/23.
 //  Copyright © 2023 Inara Takashi. All rights reserved.
 //
 
 import SwiftUI
 
 struct ModalCardView: View {
+    private var viewModel: ModalCardModel = ModalCardModel(worker: ModalCardWorker())
+    @State private var card: Card = Card.placeholder
     @Environment(\.presentationMode) private var presentationMode
-    var card: Card
     
     var body: some View {
         let dismissText = NSLocalizedString("Fechar", comment: String())
@@ -98,11 +99,26 @@ struct ModalCardView: View {
                 .padding(.horizontal, 20)
             }
         }
+        .onAppear(perform: getCard)
+    }
+    
+    func getCard() {
+        Task {
+            do {
+                card = try await viewModel.card
+            } catch let error {
+                print(error)
+            }
+        }
+    }
+    
+    init(worker: ModalCardWorkProtocol, card: Card? = nil) {
+        viewModel = ModalCardModel(worker: worker, card: card)
     }
 }
 
 struct ModalCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalCardView(card: card1)
+        ModalCardView(worker: ModalCardWorker())
     }
 }

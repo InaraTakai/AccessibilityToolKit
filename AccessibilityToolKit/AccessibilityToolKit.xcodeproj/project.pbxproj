@@ -35,8 +35,16 @@
 		DD265E15299BB1F000F0612F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E14299BB1F000F0612F /* TitleView.swift */; };
 		DD265E18299BC92C00F0612F /* ModalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E17299BC92C00F0612F /* ModalCardView.swift */; };
 		DD265E1A299BCA3D00F0612F /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD265E19299BCA3D00F0612F /* Image+Extension.swift */; };
+		DDA3659A29B9355B0036C02C /* ModalCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3659929B9355B0036C02C /* ModalCardModel.swift */; };
+		DDA3659C29B939470036C02C /* ModalCardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3659B29B939470036C02C /* ModalCardWorker.swift */; };
+		DDA3659E29B93C320036C02C /* ModalCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3659D29B93C320036C02C /* ModalCardFactory.swift */; };
+		DDA365A029B93FB70036C02C /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3659F29B93FB70036C02C /* ListModel.swift */; };
+		DDA365A229B9401D0036C02C /* ListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA365A129B9401D0036C02C /* ListWorker.swift */; };
+		DDA365A429B945F20036C02C /* ListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA365A329B945F20036C02C /* ListFactory.swift */; };
 		DDABCB20299D8F04003D610D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABCB1F299D8F04003D610D /* ListView.swift */; };
 		DDABCB22299D9170003D610D /* CardEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABCB21299D9170003D610D /* CardEnvironment.swift */; };
+		DDBB71A529BCC68100EBB2F7 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = DDBB71A429BCC68100EBB2F7 /* cards.json */; };
+		DDBB71A729BD07C700EBB2F7 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB71A629BD07C700EBB2F7 /* DataProvider.swift */; };
 		DDC7172B29A6F627001F0AA2 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7172A29A6F627001F0AA2 /* HomeWorker.swift */; };
 		DDC7172F29A80338001F0AA2 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7172E29A80338001F0AA2 /* HomeFactory.swift */; };
 		DDC7173129A80AE9001F0AA2 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7173029A80AE9001F0AA2 /* HomeModels.swift */; };
@@ -78,8 +86,16 @@
 		DD265E14299BB1F000F0612F /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		DD265E17299BC92C00F0612F /* ModalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCardView.swift; sourceTree = "<group>"; };
 		DD265E19299BCA3D00F0612F /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		DDA3659929B9355B0036C02C /* ModalCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCardModel.swift; sourceTree = "<group>"; };
+		DDA3659B29B939470036C02C /* ModalCardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCardWorker.swift; sourceTree = "<group>"; };
+		DDA3659D29B93C320036C02C /* ModalCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCardFactory.swift; sourceTree = "<group>"; };
+		DDA3659F29B93FB70036C02C /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		DDA365A129B9401D0036C02C /* ListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorker.swift; sourceTree = "<group>"; };
+		DDA365A329B945F20036C02C /* ListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFactory.swift; sourceTree = "<group>"; };
 		DDABCB1F299D8F04003D610D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DDABCB21299D9170003D610D /* CardEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnvironment.swift; sourceTree = "<group>"; };
+		DDBB71A429BCC68100EBB2F7 /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		DDBB71A629BD07C700EBB2F7 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		DDC7172A29A6F627001F0AA2 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		DDC7172E29A80338001F0AA2 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		DDC7173029A80AE9001F0AA2 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
@@ -186,9 +202,11 @@
 		DD265E08299AF0B300F0612F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DDBB71A429BCC68100EBB2F7 /* cards.json */,
 				DD265E0B299BA26700F0612F /* Color+Extension.swift */,
 				DD265E12299BAB8E00F0612F /* Text+Extension.swift */,
 				DD265E19299BCA3D00F0612F /* Image+Extension.swift */,
+				DDBB71A629BD07C700EBB2F7 /* DataProvider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,6 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				DD265E17299BC92C00F0612F /* ModalCardView.swift */,
+				DDA3659929B9355B0036C02C /* ModalCardModel.swift */,
+				DDA3659B29B939470036C02C /* ModalCardWorker.swift */,
+				DDA3659D29B93C320036C02C /* ModalCardFactory.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -215,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				DDABCB1F299D8F04003D610D /* ListView.swift */,
+				DDA365A129B9401D0036C02C /* ListWorker.swift */,
+				DDA3659F29B93FB70036C02C /* ListModel.swift */,
+				DDA365A329B945F20036C02C /* ListFactory.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -279,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCB7D9B23E44B7900A577B9 /* LaunchScreen.storyboard in Resources */,
+				DDBB71A529BCC68100EBB2F7 /* cards.json in Resources */,
 				2A6FD52323E4737900054D33 /* CardTableViewCell.xib in Resources */,
 				0DCB7D9823E44B7900A577B9 /* Assets.xcassets in Resources */,
 				0DCB7DA923E4591700A577B9 /* List.storyboard in Resources */,
@@ -296,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA365A429B945F20036C02C /* ListFactory.swift in Sources */,
 				DD265E0C299BA26700F0612F /* Color+Extension.swift in Sources */,
 				0DCB7D9323E44B7700A577B9 /* ViewController.swift in Sources */,
 				0DCB7DB123E9995F00A577B9 /* Card.swift in Sources */,
@@ -305,18 +331,24 @@
 				0DCB7DB323E999A800A577B9 /* Title.swift in Sources */,
 				0DCB7DB723E99F2400A577B9 /* Cards.swift in Sources */,
 				2AF1049723E9C972005390BE /* CardViewController.swift in Sources */,
+				DDA365A029B93FB70036C02C /* ListModel.swift in Sources */,
 				0DCB7D8F23E44B7700A577B9 /* AppDelegate.swift in Sources */,
 				DDC7173129A80AE9001F0AA2 /* HomeModels.swift in Sources */,
 				0DCB7D9123E44B7700A577B9 /* SceneDelegate.swift in Sources */,
+				DDA365A229B9401D0036C02C /* ListWorker.swift in Sources */,
 				2AF1049523E99EE1005390BE /* ListTableViewController.swift in Sources */,
 				2A6FD52223E4737900054D33 /* CardTableViewCell.swift in Sources */,
 				2AF1049923EA154F005390BE /* AboutViewController.swift in Sources */,
 				DD265E15299BB1F000F0612F /* TitleView.swift in Sources */,
 				2AB6365223EC8315006C63C9 /* TutorialViewController.swift in Sources */,
 				DD265E1A299BCA3D00F0612F /* Image+Extension.swift in Sources */,
+				DDA3659E29B93C320036C02C /* ModalCardFactory.swift in Sources */,
 				DD265E11299BA88D00F0612F /* LevelView.swift in Sources */,
 				DDABCB20299D8F04003D610D /* ListView.swift in Sources */,
 				DD265E0F299BA2F000F0612F /* CardView.swift in Sources */,
+				DDA3659C29B939470036C02C /* ModalCardWorker.swift in Sources */,
+				DDA3659A29B9355B0036C02C /* ModalCardModel.swift in Sources */,
+				DDBB71A729BD07C700EBB2F7 /* DataProvider.swift in Sources */,
 				DDC7173329A83DBF001F0AA2 /* AccessibilityToolKitApp.swift in Sources */,
 				DD265E18299BC92C00F0612F /* ModalCardView.swift in Sources */,
 				DDC7172F29A80338001F0AA2 /* HomeFactory.swift in Sources */,

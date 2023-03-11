@@ -9,18 +9,18 @@
 import SwiftUI
 
 struct ListView: View {
-    var cards: [Card]
-    var title: Title?
+    private var viewModel: ListModel = ListModel(worker: ListWorker())
+    @State private var cards: [Card] = []
     
     var body: some View {
         let allCardsText = NSLocalizedString("Todas as Cartas", comment: String())
         
         ScrollView {
             ZStack {
-                title?.color
+                viewModel.title?.color
                 LazyVStack {
                     ForEach(cards) { card in
-                        let environment: CardEnvironment = title != nil ? .listTitle : .listAll(title: card.title)
+                        let environment: CardEnvironment = viewModel.title != nil ? .listTitle : .listAll(title: card.title)
                         CardView(card: card, environment: environment)
                     }
                 }
@@ -28,10 +28,25 @@ struct ListView: View {
                 .padding(.vertical, 32)
             }
         }
-        .toolbarBackground(title?.color ?? .toolKit.background, for: .navigationBar)
+        .toolbarBackground(viewModel.title?.color ?? .toolKit.background, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
-        .navigationTitle(Text(title?.name ?? allCardsText))
-        .foregroundColor(title != nil ? .toolKit.black : .toolKit.backOpposite)
+        .navigationTitle(Text(viewModel.title?.name ?? allCardsText))
+        .foregroundColor(viewModel.title != nil ? .toolKit.black : .toolKit.backOpposite)
+        .onAppear(perform: getCards)
+    }
+    
+    func getCards() {
+        Task {
+            do {
+                cards = try await viewModel.cards
+            } catch let error {
+                print(error)
+            }
+        }
+    }
+    
+    init(worker: ListWorkProtocol, title: Title? = nil) {
+        viewModel = ListModel(worker: worker, title: title)
     }
 }
 
@@ -39,11 +54,11 @@ struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
-                ListView(cards: allCards)
+                ListView(worker: ListWorker())
             }
             
             NavigationView {
-                ListView(cards: allCards)
+                ListView(worker: ListWorker())
             }
             .environment(\.colorScheme, .dark)
         }

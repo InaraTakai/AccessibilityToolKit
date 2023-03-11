@@ -45,6 +45,6 @@ struct TitleView: View {
 
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
-        TitleView(title: .Noticeable)
+        TitleView(title: .noticeable)
     }
 }

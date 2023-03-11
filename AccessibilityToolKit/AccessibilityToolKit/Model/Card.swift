@@ -21,7 +21,43 @@ struct Card: Codable, Identifiable {
     var image: String?
     
     static var placeholder: Card {
-        return Card(title: .Operable, level: .A)
+        return Card()
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case level
+        case code
+        case guideline
+        case criterion
+        case description
+        case link
+        case image
+    }
+    
+    init(title: Title = .operable,
+         level: Level = .a,
+         code: String? = nil,
+         guideline: String? = nil,
+         criterion: String? = nil,
+         description: String? = nil,
+         link: String? = nil,
+         image: String? = nil) {
+        self.title = title
+        self.level = level
+        self.code = code
+        self.guideline = guideline
+        self.criterion = criterion
+        self.description = description
+        self.link = link
+        self.image = image
     }
 }
 
+struct CardResponse: Codable {
+    var cards: [Card]?
+    
+    func cards(for title: Title) -> [Card]? {
+        return cards?.filter({ $0.title == title })
+    }
+}

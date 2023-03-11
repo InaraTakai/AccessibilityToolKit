@@ -3,4 +3,54 @@
    uuid = "ACFE92E2-3267-4BC8-A68C-86346DDA2645"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "865D7377-AE27-459C-A1BC-54C98246EC01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AccessibilityToolKit/Scenes/Home/HomeModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "dayCard"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "865D7377-AE27-459C-A1BC-54C98246EC01 - 389dfdbff6548d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for AllyKit.Home.ViewModel.dayCard.getter : AllyKit.Card"
+                  moduleName = "AllyKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ribeiroferreira/Documents/Projects/iOS%20Projects/AccessibilityToolKit/AccessibilityToolKit/AccessibilityToolKit/Scenes/Home/HomeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "154">
+               </Location>
+               <Location
+                  uuid = "865D7377-AE27-459C-A1BC-54C98246EC01 - 5a9246f1ce3f9cdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for AllyKit.Home.ViewModel.dayCard.getter : AllyKit.Card"
+                  moduleName = "AllyKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ribeiroferreira/Documents/Projects/iOS%20Projects/AccessibilityToolKit/AccessibilityToolKit/AccessibilityToolKit/Scenes/Home/HomeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

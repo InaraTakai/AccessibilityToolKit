@@ -65,14 +65,14 @@ class ViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
         
-        if date != nil && date == formatter.string(from: currentDate) {
-            self.dayCard = allCards[defaults.integer(forKey: "card")]
-        }else{
-            self.defaults.set(formatter.string(from: currentDate), forKey: "date")
-            let cardNumber = self.randomCardNumber()
-            self.dayCard = allCards[cardNumber]
-            self.defaults.set(cardNumber, forKey: "card")
-        }
+//        if date != nil && date == formatter.string(from: currentDate) {
+//            self.dayCard = allCards[defaults.integer(forKey: "card")]
+//        }else{
+//            self.defaults.set(formatter.string(from: currentDate), forKey: "date")
+//            let cardNumber = self.randomCardNumber()
+//            self.dayCard = allCards[cardNumber]
+//            self.defaults.set(cardNumber, forKey: "card")
+//        }
         
         self.dayIndexLabel.text = self.dayCard?.code
         self.dayTitleLabel.text = self.dayCard?.guideline
@@ -104,7 +104,8 @@ class ViewController: UIViewController {
     }
     
     func randomCard() -> Card {
-        return allCards.randomElement() ?? allCards[0]
+//        return allCards.randomElement() ?? allCards[0]
+        return Card.placeholder
     }
     
     func randomCardNumber() -> Int {

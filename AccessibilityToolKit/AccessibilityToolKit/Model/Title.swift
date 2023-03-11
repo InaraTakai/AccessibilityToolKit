@@ -10,23 +10,23 @@ import Foundation
 import UIKit
 import SwiftUI
 
-enum Title: Codable {
-    case Noticeable
-    case Operable
-    case Understandable
-    case Robust
+enum Title: String, Codable {
+    case noticeable
+    case operable
+    case understandable
+    case robust
     
     var name: String {
         var name: String
         
         switch self {
-        case .Noticeable:
+        case .noticeable:
             name = NSLocalizedString("Perceptível", comment: "Princípio de acessibilidade")
-        case .Operable:
+        case .operable:
             name = NSLocalizedString("Operável", comment: "Princípio de acessibilidade")
-        case .Understandable:
+        case .understandable:
             name = NSLocalizedString("Compreensível", comment: "Princípio de acessibilidade")
-        case .Robust:
+        case .robust:
             name = NSLocalizedString("Robusto", comment: "Princípio de acessibilidade")
         }
         return name
@@ -36,13 +36,13 @@ enum Title: Codable {
         var color: Color
         
         switch self {
-        case .Noticeable:
+        case .noticeable:
             color = .toolKit.red
-        case .Operable:
+        case .operable:
             color = .toolKit.blue
-        case .Understandable:
+        case .understandable:
             color = .toolKit.yellow
-        case .Robust:
+        case .robust:
             color = .toolKit.green
         }
         
@@ -53,13 +53,13 @@ enum Title: Codable {
         var symbol: Image
         
         switch self {
-        case .Noticeable:
+        case .noticeable:
             symbol = Image("NoticeableSymbol")
-        case .Operable:
+        case .operable:
             symbol = Image("OperableSymbol")
-        case .Understandable:
+        case .understandable:
             symbol = Image("UnderstandableSymbol")
-        case .Robust:
+        case .robust:
             symbol = Image("RobustSymbol")
         }
         return symbol
@@ -69,13 +69,13 @@ enum Title: Codable {
         var color: UIColor?
         
         switch self {
-        case .Noticeable:
+        case .noticeable:
             color = UIColor(named: "ToolKitRed")
-        case .Operable:
+        case .operable:
             color = UIColor(named: "ToolKitBlue")
-        case .Understandable:
+        case .understandable:
             color = UIColor(named: "ToolKitYellow")
-        case .Robust:
+        case .robust:
             color = UIColor(named: "ToolKitGreen")
         }
         
@@ -86,13 +86,13 @@ enum Title: Codable {
         var symbol: UIImage?
         
         switch self {
-        case .Noticeable:
+        case .noticeable:
             symbol = UIImage(named: "NoticeableSymbol")
-        case .Operable:
+        case .operable:
             symbol = UIImage(named: "OperableSymbol")
-        case .Understandable:
+        case .understandable:
             symbol = UIImage(named: "UnderstandableSymbol")
-        case .Robust:
+        case .robust:
             symbol = UIImage(named: "RobustSymbol")
         }
         return symbol

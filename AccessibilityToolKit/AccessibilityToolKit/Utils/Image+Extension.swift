@@ -2,7 +2,7 @@
 //  Image+Extension.swift
 //  AccessibilityToolKit
 //
-//  Created by Ribeiro Ferreira on 14/02/23.
+//  Created by Gab Ferreira on 14/02/23.
 //  Copyright © 2023 Inara Takashi. All rights reserved.
 //
 

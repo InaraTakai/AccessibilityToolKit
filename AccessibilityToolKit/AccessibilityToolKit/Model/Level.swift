@@ -8,20 +8,20 @@
 
 import Foundation
 
-enum Level: Codable {
-    case A
-    case AA
-    case AAA
+enum Level: String, Codable {
+    case a
+    case aa
+    case aaa
     
     var description: String {
         var levelLabel: String
         
         switch self {
-        case .A:
+        case .a:
             levelLabel = NSLocalizedString("A", comment: "Nível de conformidade")
-        case .AA:
+        case .aa:
             levelLabel = NSLocalizedString("AA", comment: "Nível de conformidade")
-        case .AAA:
+        case .aaa:
             levelLabel = NSLocalizedString("AAA", comment: "Nível de conformidade")
         }
         
@@ -32,11 +32,11 @@ enum Level: Codable {
         var voiceOverLabel: String
         
         switch self {
-        case .A:
+        case .a:
            voiceOverLabel = NSLocalizedString("baixo", comment: "Nível de conformidade")
-        case .AA:
+        case .aa:
             voiceOverLabel = NSLocalizedString("médio", comment: "Nível de conformidade")
-        case .AAA:
+        case .aaa:
             voiceOverLabel = NSLocalizedString("alto", comment: "Nível de conformidade")
         }
         

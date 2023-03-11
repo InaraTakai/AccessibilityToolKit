@@ -37,12 +37,12 @@ class ListTableViewController: UITableViewController {
         let nib = UINib.init(nibName: self.cardCell, bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: self.cardCell)
         
-        if let cardsPrinciple = listaPrinciple[titleList!] {
-            for cardd in cardsPrinciple {
-                allCardsPrinciple.append(cardd)
-            }
-            tableView.reloadData()
-        }
+//        if let cardsPrinciple = listaPrinciple[titleList!] {
+//            for cardd in cardsPrinciple {
+//                allCardsPrinciple.append(cardd)
+//            }
+//            tableView.reloadData()
+//        }
         tableView.reloadData()
     }
     
